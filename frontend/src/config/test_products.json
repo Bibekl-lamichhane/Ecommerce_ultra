@@ -1,0 +1,1600 @@
+[{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aa94"
+  },
+  "name": "Lloyd 1.5 Ton 3 Star Inverter Split Ac (5 In 1 Convertible, Copper, Anti-Viral + Pm 2.5 Filter, 2023 Model, White, Gls18I3...",
+  "discount_price": 32999,
+  "actual_price": 58990,
+  "ratings": 4.2,
+  "no_of_ratings": 2255,
+  "image": "https://m.media-amazon.com/images/I/31UISB90sYL._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "Air Conditioners",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aa95"
+  },
+  "name": "LG 1.5 Ton 5 Star AI DUAL Inverter Split AC (Copper, Super Convertible 6-in-1 Cooling, HD Filter with Anti-Virus Protectio...",
+  "discount_price": 46490,
+  "actual_price": 75990,
+  "ratings": 4.2,
+  "no_of_ratings": 2948,
+  "image": "https://m.media-amazon.com/images/I/51JFb7FctDL._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "Air Conditioners",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aa96"
+  },
+  "name": "LG 1 Ton 4 Star Ai Dual Inverter Split Ac (Copper, Super Convertible 6-In-1 Cooling, Hd Filter With Anti Virus Protection,...",
+  "discount_price": 34490,
+  "actual_price": 61990,
+  "ratings": 4.2,
+  "no_of_ratings": 1206,
+  "image": "https://m.media-amazon.com/images/I/51JFb7FctDL._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "Air Conditioners",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aa97"
+  },
+  "name": "LG 1.5 Ton 3 Star AI DUAL Inverter Split AC (Copper, Super Convertible 6-in-1 Cooling, HD Filter with Anti-Virus Protectio...",
+  "discount_price": 37990,
+  "actual_price": 68990,
+  "ratings": 4,
+  "no_of_ratings": 69,
+  "image": "https://m.media-amazon.com/images/I/51JFb7FctDL._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "Air Conditioners",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aa98"
+  },
+  "name": "Carrier 1.5 Ton 3 Star Inverter Split AC (Copper,ESTER Dxi, 4-in-1 Flexicool Inverter, 2022 Model,R32,White)",
+  "discount_price": 34490,
+  "actual_price": 67790,
+  "ratings": 4.1,
+  "no_of_ratings": 630,
+  "image": "https://m.media-amazon.com/images/I/41lrtqXPiWL._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "Air Conditioners",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aa99"
+  },
+  "name": "Voltas 1.4 Ton 3 Star Inverter Split AC(Copper, Adjustable Cooling, Anti-dust Filter, 2023 Model, 173V Vectra Platina, White)",
+  "discount_price": 31990,
+  "actual_price": 70990,
+  "ratings": 4,
+  "no_of_ratings": 1666,
+  "image": "https://m.media-amazon.com/images/I/41TuyxwZ9mL._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "Air Conditioners",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aa9a"
+  },
+  "name": "Lloyd 1.0 Ton 3 Star Inverter Split Ac (5 In 1 Convertible, Copper, Anti-Viral + Pm 2.5 Filter, 2023 Model, White With Chr...",
+  "discount_price": 29999,
+  "actual_price": 49990,
+  "ratings": 4.2,
+  "no_of_ratings": 1097,
+  "image": "https://m.media-amazon.com/images/I/31IXlxIPsOL._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "Air Conditioners",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aa9b"
+  },
+  "name": "Lloyd 1.5 Ton 5 Star Inverter Split Ac (5 In 1 Convertible, Copper, Anti-Viral + Pm 2.5 Filter, 2023 Model, White With Chr...",
+  "discount_price": 39990,
+  "actual_price": 67990,
+  "ratings": 4.3,
+  "no_of_ratings": 1494,
+  "image": "https://m.media-amazon.com/images/I/31IXlxIPsOL._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "Air Conditioners",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aa9c"
+  },
+  "name": "Carrier 1 Ton 3 Star AI Flexicool Inverter Split AC (Copper, Convertible 4-in-1 Cooling,Dual Filtration with HD & PM 2.5 F...",
+  "discount_price": 30990,
+  "actual_price": 58190,
+  "ratings": 4.1,
+  "no_of_ratings": 674,
+  "image": "https://m.media-amazon.com/images/I/51sTXvsanQL._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "Air Conditioners",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aa9d"
+  },
+  "name": "Voltas 1.5 Ton, 5 Star, Inverter Split AC(Copper, 4-in-1 Adjustable Mode, Anti-dust Filter, 2023 Model, 185V DAZJ, White)",
+  "discount_price": 37999,
+  "actual_price": 73990,
+  "ratings": 4,
+  "no_of_ratings": 801,
+  "image": "https://m.media-amazon.com/images/I/51WQ3nWF0vL._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "Air Conditioners",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aa9e"
+  },
+  "name": "AmazonBasics High Speed 55 Watt Oscillating Pedestal Fan, 400mm Sweep Length, White (Without Remote)",
+  "discount_price": 2099,
+  "actual_price": 3300,
+  "ratings": 4.1,
+  "no_of_ratings": 6113,
+  "image": "https://m.media-amazon.com/images/I/71QfUcEOg8L._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "All Appliances",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aa9f"
+  },
+  "name": "Farberware Mini Blender Fruit Mixer Machine Portable Electric Juicer grinder Cup 380ML Personal Blender Smoothie Maker USB...",
+  "discount_price": 499,
+  "actual_price": 1199,
+  "ratings": 2.9,
+  "no_of_ratings": 6071,
+  "image": "https://m.media-amazon.com/images/I/716mmFt0PGL._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "All Appliances",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaa0"
+  },
+  "name": "PHILIPS Handheld Garment Steamer STH3000/20 - Compact & Foldable, Convenient Vertical Steaming, 1000 Watt Quick Heat Up, u...",
+  "discount_price": 3995,
+  "actual_price": 4095,
+  "ratings": 4,
+  "no_of_ratings": 1553,
+  "image": "https://m.media-amazon.com/images/I/71W2XPQdBqL._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "All Appliances",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaa1"
+  },
+  "name": "Cookwell Bullet Mixer Grinder (5 Jars, 3 Blades, Silver)",
+  "discount_price": 2479,
+  "actual_price": 6000,
+  "ratings": 4.1,
+  "no_of_ratings": 9592,
+  "image": "https://m.media-amazon.com/images/I/81yobRRV8nL._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "All Appliances",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaa2"
+  },
+  "name": "Bajaj ATX 4 750-Watt Pop-up Toaster, 2-Slice Automatic Pop up Toaster with Dust Cover & Slide Out Crumb Tray, 6-Level Brow...",
+  "discount_price": 1499,
+  "actual_price": 2250,
+  "ratings": 4.3,
+  "no_of_ratings": 9520,
+  "image": "https://m.media-amazon.com/images/I/51D5T7TGVbL._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "All Appliances",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaa3"
+  },
+  "name": "HUL Pureit Germkill kit for Classic 23 L water purifier - 3000 L Capacity",
+  "discount_price": 0,
+  "actual_price": 1130,
+  "ratings": 4.2,
+  "no_of_ratings": 13467,
+  "image": "https://m.media-amazon.com/images/I/61QNGI22XDL._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "All Appliances",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaa4"
+  },
+  "name": "KENT 16069 Super Egg Boiler 400 Watts | Boils Upto 6 Eggs at a Time | 3 Boiling Modes | Stainless Steel Body and Heating P...",
+  "discount_price": 1115,
+  "actual_price": 1800,
+  "ratings": 4.3,
+  "no_of_ratings": 12213,
+  "image": "https://m.media-amazon.com/images/I/71+2IuZ78XL._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "All Appliances",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaa5"
+  },
+  "name": "HUL Pureit Germkill kit for Classic 23 L water purifier - 1500 L Capacity",
+  "discount_price": 0,
+  "actual_price": 600,
+  "ratings": 4.1,
+  "no_of_ratings": 11108,
+  "image": "https://m.media-amazon.com/images/I/61h7YWM2+oL._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "All Appliances",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaa6"
+  },
+  "name": "Bajaj Immersion Rod Water Heater 1500 Watts, Silver",
+  "discount_price": 539,
+  "actual_price": 665,
+  "ratings": 4.1,
+  "no_of_ratings": 36955,
+  "image": "https://m.media-amazon.com/images/I/51bfOnh2M4L._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "All Appliances",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaa7"
+  },
+  "name": "APTODEN Electric Handheld Milk Wand Mixer Frother for Latte Coffee Hot Milk, Frother for Coffee, Egg Beater, Hand Blender,...",
+  "discount_price": 329,
+  "actual_price": 799,
+  "ratings": 4.3,
+  "no_of_ratings": 821,
+  "image": "https://m.media-amazon.com/images/I/61+74y2T37L._AC_UL320_.jpg",
+  "main_category": "appliances",
+  "sub_category": "All Appliances",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaa8"
+  },
+  "name": "Ambi Pur Car Air Freshener Refill Aerosol, Aqua, 7.5 ml",
+  "discount_price": 183,
+  "actual_price": 199,
+  "ratings": 4,
+  "no_of_ratings": 906,
+  "image": "https://m.media-amazon.com/images/I/71WZSEmIzLL._AC_UL320_.jpg",
+  "main_category": "car & motorbike",
+  "sub_category": "All Car & Motorbike Products",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaa9"
+  },
+  "name": "CQLEK® 2022 New Version-Car Phone Holder Mount, Rearview Mirror Phone Holder for Car, 360°Rotatable and Retractable Car Ph...",
+  "discount_price": 299,
+  "actual_price": 999,
+  "ratings": 2.8,
+  "no_of_ratings": 537,
+  "image": "https://m.media-amazon.com/images/I/61-wL6xHA-L._AC_UL320_.jpg",
+  "main_category": "car & motorbike",
+  "sub_category": "All Car & Motorbike Products",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaaa"
+  },
+  "name": "INVOLVE Music Retro Fragrance Gel Car Perfume with DrivFRESH | Water Based Car Air Freshener - IMUS01-85g",
+  "discount_price": 408,
+  "actual_price": 499,
+  "ratings": 3.7,
+  "no_of_ratings": 1407,
+  "image": "https://m.media-amazon.com/images/I/41w3p7EeQpL._AC_UL320_.jpg",
+  "main_category": "car & motorbike",
+  "sub_category": "All Car & Motorbike Products",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaab"
+  },
+  "name": "AmazonBasics 16-Gauge Speaker Wire - 100 Feet, Transparent",
+  "discount_price": 799,
+  "actual_price": 1700,
+  "ratings": 4.4,
+  "no_of_ratings": 49838,
+  "image": "https://m.media-amazon.com/images/I/718x1vTL4EL._AC_UL320_.jpg",
+  "main_category": "car & motorbike",
+  "sub_category": "All Car & Motorbike Products",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaac"
+  },
+  "name": "Top Team Heavy Duty Multipurpose Use Cycle, Bike, Helmet Oil Rubbed Cable Lock with Keys (Color - May Vary). (DL)",
+  "discount_price": 189,
+  "actual_price": 399,
+  "ratings": 4.2,
+  "no_of_ratings": 4,
+  "image": "https://m.media-amazon.com/images/I/317ewPL0DnL._AC_UL320_.jpg",
+  "main_category": "car & motorbike",
+  "sub_category": "All Car & Motorbike Products",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaad"
+  },
+  "name": "Waxpol Silky Touch Liquid Wax Polish (for High Gloss & Hydrophobic Protection) 300 ml",
+  "discount_price": 360,
+  "actual_price": 460,
+  "ratings": 4.1,
+  "no_of_ratings": 1995,
+  "image": "https://m.media-amazon.com/images/I/51PmMz-92qL._AC_UL320_.jpg",
+  "main_category": "car & motorbike",
+  "sub_category": "All Car & Motorbike Products",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaae"
+  },
+  "name": "MANOGYAM Cycle Foot Air Pump | Bike Pump | Cycle Pump | Portable Bike Foot Pump | Air Pump | Foot Pump | Bicycle Air Pump ...",
+  "discount_price": 290,
+  "actual_price": 699,
+  "ratings": 0,
+  "no_of_ratings": 0,
+  "image": "https://m.media-amazon.com/images/I/61OT0cPGInL._AC_UL320_.jpg",
+  "main_category": "car & motorbike",
+  "sub_category": "All Car & Motorbike Products",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaaf"
+  },
+  "name": "ShineXPro Microfiber Cloth for Car - Workhorse Terry 400 GSM Microfiber Cloth - 4Pcs - 40x40 CM - Multipurpose Microfiber ...",
+  "discount_price": 479,
+  "actual_price": 599,
+  "ratings": 4.2,
+  "no_of_ratings": 690,
+  "image": "https://m.media-amazon.com/images/I/71+XeNz8C0L._AC_UL320_.jpg",
+  "main_category": "car & motorbike",
+  "sub_category": "All Car & Motorbike Products",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aab0"
+  },
+  "name": "Double R Bags Multi Compartments Collapsible Portable Car Accessories for Trunk Dicky Boot Organizer Storage for Garage Se...",
+  "discount_price": 1667,
+  "actual_price": 2999,
+  "ratings": 4.4,
+  "no_of_ratings": 542,
+  "image": "https://m.media-amazon.com/images/I/71MEcXwo0BL._AC_UL320_.jpg",
+  "main_category": "car & motorbike",
+  "sub_category": "All Car & Motorbike Products",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aab1"
+  },
+  "name": "Eltron Turbo ELT9FHFHGF52 1 Month Warranty Original DC Power Mini Driving Fog Light Universal For All Motorcycle, Bikes, S...",
+  "discount_price": 949,
+  "actual_price": 3999,
+  "ratings": 3.7,
+  "no_of_ratings": 318,
+  "image": "https://m.media-amazon.com/images/I/41aaimW15eL._AC_UL320_.jpg",
+  "main_category": "car & motorbike",
+  "sub_category": "All Car & Motorbike Products",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aab2"
+  },
+  "name": "Redmi 10 Power (Power Black, 8GB RAM, 128GB Storage)",
+  "discount_price": 10999,
+  "actual_price": 18999,
+  "ratings": 4,
+  "no_of_ratings": 965,
+  "image": "https://m.media-amazon.com/images/I/81eM15lVcJL._AC_UL320_.jpg",
+  "main_category": "tv, audio & cameras",
+  "sub_category": "All Electronics",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aab3"
+  },
+  "name": "OnePlus Nord CE 2 Lite 5G (Blue Tide, 6GB RAM, 128GB Storage)",
+  "discount_price": 18999,
+  "actual_price": 19999,
+  "ratings": 4.3,
+  "no_of_ratings": 113956,
+  "image": "https://m.media-amazon.com/images/I/71AvQd3VzqL._AC_UL320_.jpg",
+  "main_category": "tv, audio & cameras",
+  "sub_category": "All Electronics",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aab4"
+  },
+  "name": "OnePlus Bullets Z2 Bluetooth Wireless in Ear Earphones with Mic, Bombastic Bass - 12.4 Mm Drivers, 10 Mins Charge - 20 Hrs...",
+  "discount_price": 1999,
+  "actual_price": 2299,
+  "ratings": 4.2,
+  "no_of_ratings": 90304,
+  "image": "https://m.media-amazon.com/images/I/51UhwaQXCpL._AC_UL320_.jpg",
+  "main_category": "tv, audio & cameras",
+  "sub_category": "All Electronics",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aab5"
+  },
+  "name": "Samsung Galaxy M33 5G (Mystique Green, 6GB, 128GB Storage) | 6000mAh Battery | Upto 12GB RAM with RAM Plus | Travel Adapte...",
+  "discount_price": 15999,
+  "actual_price": 24999,
+  "ratings": 4.1,
+  "no_of_ratings": 24863,
+  "image": "https://m.media-amazon.com/images/I/81I3w4J6yjL._AC_UL320_.jpg",
+  "main_category": "tv, audio & cameras",
+  "sub_category": "All Electronics",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aab6"
+  },
+  "name": "OnePlus Nord CE 2 Lite 5G (Black Dusk, 6GB RAM, 128GB Storage)",
+  "discount_price": 18999,
+  "actual_price": 19999,
+  "ratings": 4.3,
+  "no_of_ratings": 113956,
+  "image": "https://m.media-amazon.com/images/I/71V--WZVUIL._AC_UL320_.jpg",
+  "main_category": "tv, audio & cameras",
+  "sub_category": "All Electronics",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aab7"
+  },
+  "name": "Redmi 10 Power (Sporty Orange, 8GB RAM, 128GB Storage)",
+  "discount_price": 10999,
+  "actual_price": 18999,
+  "ratings": 4,
+  "no_of_ratings": 625,
+  "image": "https://m.media-amazon.com/images/I/81OZGH4fZiL._AC_UL320_.jpg",
+  "main_category": "tv, audio & cameras",
+  "sub_category": "All Electronics",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aab8"
+  },
+  "name": "boAt Airdopes 141 Bluetooth Truly Wireless in Ear Earbuds with mic, 42H Playtime, Beast Mode(Low Latency Upto 80ms) for Ga...",
+  "discount_price": 1299,
+  "actual_price": 3995,
+  "ratings": 3.9,
+  "no_of_ratings": 172347,
+  "image": "https://m.media-amazon.com/images/I/51HBom8xz7L._AC_UL320_.jpg",
+  "main_category": "tv, audio & cameras",
+  "sub_category": "All Electronics",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aab9"
+  },
+  "name": "Apple 20W USB-C Power Adapter (for iPhone, iPad & AirPods)",
+  "discount_price": 1589,
+  "actual_price": 1900,
+  "ratings": 4.6,
+  "no_of_ratings": 61748,
+  "image": "https://m.media-amazon.com/images/I/61vtLhO6fDL._AC_UL320_.jpg",
+  "main_category": "tv, audio & cameras",
+  "sub_category": "All Electronics",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaba"
+  },
+  "name": "Fire-Boltt Ninja Call Pro Plus 1.83\" Smart Watch with Bluetooth Calling, AI Voice Assistance, 100 Sports Modes IP67 Ratin...",
+  "discount_price": 1799,
+  "actual_price": 19999,
+  "ratings": 4.3,
+  "no_of_ratings": 16949,
+  "image": "https://m.media-amazon.com/images/I/61S9aVnRZDL._AC_UL320_.jpg",
+  "main_category": "tv, audio & cameras",
+  "sub_category": "All Electronics",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aabb"
+  },
+  "name": "Samsung Galaxy M33 5G (Emerald Brown, 6GB, 128GB Storage) | 6000mAh Battery | Upto 12GB RAM with RAM Plus | Travel Adapter...",
+  "discount_price": 15999,
+  "actual_price": 24999,
+  "ratings": 4.1,
+  "no_of_ratings": 24863,
+  "image": "https://m.media-amazon.com/images/I/81lnKynSaqL._AC_UL320_.jpg",
+  "main_category": "tv, audio & cameras",
+  "sub_category": "All Electronics",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aabc"
+  },
+  "name": "Kore Regular Gym Bag",
+  "discount_price": 0,
+  "actual_price": 59,
+  "ratings": 2.9,
+  "no_of_ratings": 3836,
+  "image": "https://m.media-amazon.com/images/I/715B2hG++tL._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Exercise & Fitness",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aabd"
+  },
+  "name": "Boldfit Resistance Tube with Foam Handles, Door Anchor for Exercise & Stretching, Suitable in Home & Gym Workout for Men &...",
+  "discount_price": 279,
+  "actual_price": 699,
+  "ratings": 4,
+  "no_of_ratings": 3018,
+  "image": "https://m.media-amazon.com/images/I/71l0xZ29TfS._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Exercise & Fitness",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aabe"
+  },
+  "name": "Strauss Exercise Latex Resistance Bands, (Set of 5)",
+  "discount_price": 489,
+  "actual_price": 1049,
+  "ratings": 4.1,
+  "no_of_ratings": 4403,
+  "image": "https://m.media-amazon.com/images/I/71yLuDGjJUL._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Exercise & Fitness",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aabf"
+  },
+  "name": "AUXTER Faux Leather 23 Cms Duffle Bag(AUX_GB_LE_Black -SE_0521_Black)",
+  "discount_price": 376,
+  "actual_price": 999,
+  "ratings": 4.3,
+  "no_of_ratings": 8901,
+  "image": "https://m.media-amazon.com/images/I/71xeudlt5EL._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Exercise & Fitness",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aac0"
+  },
+  "name": "Kore PVC 10-40 Kg Home Gym Set with One 3 Ft Curl and One Pair Dumbbell Rods with Gym Accessories",
+  "discount_price": 1049,
+  "actual_price": 4090,
+  "ratings": 3.6,
+  "no_of_ratings": 33078,
+  "image": "https://m.media-amazon.com/images/I/81XNzjmXi+L._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Exercise & Fitness",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aac1"
+  },
+  "name": "MAXWELL®FIT-Yoga Mat for Women and Men Fitness (SIZE-4mm) with Carrying Strap Extra Thick & Large Excercise Mat for Workou...",
+  "discount_price": 320,
+  "actual_price": 1699,
+  "ratings": 4,
+  "no_of_ratings": 165,
+  "image": "https://m.media-amazon.com/images/I/61xWyTStjTL._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Exercise & Fitness",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aac2"
+  },
+  "name": "OJS Skipping Rope for Men and Women Jumping Rope With Adjustable Height Speed Skipping Rope for Exercise, Gym, Sports Fitn...",
+  "discount_price": 99,
+  "actual_price": 999,
+  "ratings": 3.9,
+  "no_of_ratings": 48,
+  "image": "https://m.media-amazon.com/images/I/71V7BaHBcqL._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Exercise & Fitness",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aac3"
+  },
+  "name": "Kore PVC DM-5kg-Combo 161 Fixed Dumbbells Set and Fitness Kit for Men and Women Whole Body Workout, Multicolor",
+  "discount_price": 449,
+  "actual_price": 499,
+  "ratings": 3.8,
+  "no_of_ratings": 5158,
+  "image": "https://m.media-amazon.com/images/I/713zoEM3wlL._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Exercise & Fitness",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aac4"
+  },
+  "name": "NIVIA Beast Gym Bag-4 Polyester/Unisex Gym Bags/Shoulder Bag for Men & Women with Separate Shoes Compartment/Carry Gym Acc...",
+  "discount_price": 528,
+  "actual_price": 799,
+  "ratings": 4.2,
+  "no_of_ratings": 3755,
+  "image": "https://m.media-amazon.com/images/I/51i9ODagRZL._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Exercise & Fitness",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aac5"
+  },
+  "name": "Starx Plastic Xpvc Fixed Dumbbell Set, Adult 1Kg, Set of 2 (Blue)",
+  "discount_price": 99,
+  "actual_price": 590,
+  "ratings": 3.4,
+  "no_of_ratings": 990,
+  "image": "https://m.media-amazon.com/images/I/51k8rbleUML._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Exercise & Fitness",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aac6"
+  },
+  "name": "Nutraj 100% Natural Dried Premium California Walnut Kernels, 500g (2 X 250g) | Pure Without Shell Walnut Kernels | Akhrot ...",
+  "discount_price": 686,
+  "actual_price": 998,
+  "ratings": 3.9,
+  "no_of_ratings": 6081,
+  "image": "https://m.media-amazon.com/images/I/71f5UPOWDqL._AC_UL320_.jpg",
+  "main_category": "grocery & gourmet foods",
+  "sub_category": "All Grocery & Gourmet Foods",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aac7"
+  },
+  "name": "Cadbury Bournvita 5 Star Magic Health Drink, 750g Pouch",
+  "discount_price": 0,
+  "actual_price": 353,
+  "ratings": 4.3,
+  "no_of_ratings": 8481,
+  "image": "https://m.media-amazon.com/images/I/614FIW5c6HL._AC_UL320_.jpg",
+  "main_category": "grocery & gourmet foods",
+  "sub_category": "All Grocery & Gourmet Foods",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aac8"
+  },
+  "name": "Sugar Free Green Natural Stevia Jar(200 g)",
+  "discount_price": 162,
+  "actual_price": 170,
+  "ratings": 4.3,
+  "no_of_ratings": 1585,
+  "image": "https://m.media-amazon.com/images/I/61rBhkTJ6EL._AC_UL320_.jpg",
+  "main_category": "grocery & gourmet foods",
+  "sub_category": "All Grocery & Gourmet Foods",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aac9"
+  },
+  "name": "Daawat Pulav, Long Grains, Fluffy Basmati for finest Pulav, 1 Kg",
+  "discount_price": 138,
+  "actual_price": 139,
+  "ratings": 4.3,
+  "no_of_ratings": 3907,
+  "image": "https://m.media-amazon.com/images/I/71UO6eXC1QL._AC_UL320_.jpg",
+  "main_category": "grocery & gourmet foods",
+  "sub_category": "All Grocery & Gourmet Foods",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaca"
+  },
+  "name": "Tata Tea Gold | Assam teas with Gently Rolled Aromatic Long Leaves | Rich & Aromatic Chai | Black Tea | 500g",
+  "discount_price": 283,
+  "actual_price": 295,
+  "ratings": 4.4,
+  "no_of_ratings": 15528,
+  "image": "https://m.media-amazon.com/images/I/51kEujuYlpL._AC_UL320_.jpg",
+  "main_category": "grocery & gourmet foods",
+  "sub_category": "All Grocery & Gourmet Foods",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aacb"
+  },
+  "name": "Wagh Bakri Premium Leaf Tea, Poly Pack, 500g",
+  "discount_price": 281,
+  "actual_price": 290,
+  "ratings": 4.4,
+  "no_of_ratings": 4463,
+  "image": "https://m.media-amazon.com/images/I/61kTHO+UX9L._AC_UL320_.jpg",
+  "main_category": "grocery & gourmet foods",
+  "sub_category": "All Grocery & Gourmet Foods",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aacc"
+  },
+  "name": "Dabur Vedic Tea - 500gm | Handpicked from Assam, Nilgiri & Darjeeling | Soulful Aroma & Rich Taste | 30+ Ayurvedic Herbs |...",
+  "discount_price": 205,
+  "actual_price": 295,
+  "ratings": 4,
+  "no_of_ratings": 517,
+  "image": "https://m.media-amazon.com/images/I/61DMPchFPLL._AC_UL320_.jpg",
+  "main_category": "grocery & gourmet foods",
+  "sub_category": "All Grocery & Gourmet Foods",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aacd"
+  },
+  "name": "Nescafe Classic Coffee Jar, 200 g with Free Red Mug and Scoop Spoon",
+  "discount_price": 626,
+  "actual_price": 640,
+  "ratings": 4.5,
+  "no_of_ratings": 2539,
+  "image": "https://m.media-amazon.com/images/I/71ehfHfPCzL._AC_UL320_.jpg",
+  "main_category": "grocery & gourmet foods",
+  "sub_category": "All Grocery & Gourmet Foods",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aace"
+  },
+  "name": "BLUE TEA - Chamomile Flower Tea | Pure Whole Flower Buds of Chamomile || SLEEP TEA & STRESS RELIEF || Herbal Tea - Caffein...",
+  "discount_price": 189,
+  "actual_price": 399,
+  "ratings": 4.1,
+  "no_of_ratings": 10450,
+  "image": "https://m.media-amazon.com/images/I/71qVgLGta9L._AC_UL320_.jpg",
+  "main_category": "grocery & gourmet foods",
+  "sub_category": "All Grocery & Gourmet Foods",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aacf"
+  },
+  "name": "Organic Tattva, Organic Wheat Dalia / Daliya, 500g",
+  "discount_price": 0,
+  "actual_price": 55,
+  "ratings": 4.3,
+  "no_of_ratings": 1513,
+  "image": "https://m.media-amazon.com/images/I/71a5llM7MBL._AC_UL320_.jpg",
+  "main_category": "grocery & gourmet foods",
+  "sub_category": "All Grocery & Gourmet Foods",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aad0"
+  },
+  "name": "Godrej aer Matic Kit (Machine + 1 Refill) - Automatic Room Fresheners with Flexi Control Spray | Violet Valley Bloom | 220...",
+  "discount_price": 466,
+  "actual_price": 569.01,
+  "ratings": 4.1,
+  "no_of_ratings": 16946,
+  "image": "https://m.media-amazon.com/images/I/6121tV2hW9L._AC_UL320_.jpg",
+  "main_category": "home & kitchen",
+  "sub_category": "All Home & Kitchen",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aad1"
+  },
+  "name": "Presto! Oxo-Biodegradable Garbage Bags, Large (24 x 32 inches) - 15 bags/roll (Pack of 6, Black)",
+  "discount_price": 349,
+  "actual_price": 480,
+  "ratings": 4.3,
+  "no_of_ratings": 26857,
+  "image": "https://m.media-amazon.com/images/I/71-2fEBGZDL._AC_UL320_.jpg",
+  "main_category": "home & kitchen",
+  "sub_category": "All Home & Kitchen",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aad2"
+  },
+  "name": "Happilo 100% Natural Premium 200g Whole Cashews | Whole Crunchy Cashew | Premium Kaju nuts | Nutritious & Delicious | Glut...",
+  "discount_price": 199,
+  "actual_price": 335,
+  "ratings": 4.2,
+  "no_of_ratings": 13919,
+  "image": "https://m.media-amazon.com/images/I/71tYPz++3+L._AC_UL320_.jpg",
+  "main_category": "home & kitchen",
+  "sub_category": "All Home & Kitchen",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aad3"
+  },
+  "name": "beatXP Kitchen Scale Multipurpose Portable Electronic Digital Weighing Scale | Weight Machine With Back light LCD Display...",
+  "discount_price": 399,
+  "actual_price": 1999,
+  "ratings": 3.7,
+  "no_of_ratings": 3306,
+  "image": "https://m.media-amazon.com/images/I/61Is7sICRJL._AC_UL320_.jpg",
+  "main_category": "home & kitchen",
+  "sub_category": "All Home & Kitchen",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aad4"
+  },
+  "name": "Dettol Antiseptic Liquid for First Aid , Surface Disinfection and Personal Hygiene , 1000ml",
+  "discount_price": 342,
+  "actual_price": 364,
+  "ratings": 4.6,
+  "no_of_ratings": 19981,
+  "image": "https://m.media-amazon.com/images/I/51fFgtFBshL._AC_UL320_.jpg",
+  "main_category": "home & kitchen",
+  "sub_category": "All Home & Kitchen",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aad5"
+  },
+  "name": "Scotch Double Sided Heavy Duty Tape(1m holds 4.5Kgs) for indoor hanging applications (Photo frames, Mirrors, Key Holders, ...",
+  "discount_price": 144,
+  "actual_price": 165,
+  "ratings": 3.9,
+  "no_of_ratings": 15480,
+  "image": "https://m.media-amazon.com/images/I/815GcGXjjFL._AC_UL320_.jpg",
+  "main_category": "home & kitchen",
+  "sub_category": "All Home & Kitchen",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aad6"
+  },
+  "name": "Good knight Gold Flash, Mosquito Repellent Refill | 45ml each (Pack of 4)",
+  "discount_price": 275,
+  "actual_price": 316,
+  "ratings": 4.3,
+  "no_of_ratings": 13153,
+  "image": "https://m.media-amazon.com/images/I/71LtQCvMu4L._AC_UL320_.jpg",
+  "main_category": "home & kitchen",
+  "sub_category": "All Home & Kitchen",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aad7"
+  },
+  "name": "Bajaj DX-6 1000W Dry Iron with Advance Soleplate and Anti-bacterial German Coating Technology, White",
+  "discount_price": 625,
+  "actual_price": 1400,
+  "ratings": 4.2,
+  "no_of_ratings": 24394,
+  "image": "https://m.media-amazon.com/images/I/61qgKaW71mL._AC_UL320_.jpg",
+  "main_category": "home & kitchen",
+  "sub_category": "All Home & Kitchen",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aad8"
+  },
+  "name": "Maggi 2-Minute Masala Instant Noodles, 420 grams Pouch",
+  "discount_price": 0,
+  "actual_price": 82,
+  "ratings": 4.4,
+  "no_of_ratings": 6591,
+  "image": "https://m.media-amazon.com/images/I/71duk+o9d1L._AC_UL320_.jpg",
+  "main_category": "home & kitchen",
+  "sub_category": "All Home & Kitchen",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aad9"
+  },
+  "name": "STRIFF Adjustable Laptop Tabletop Stand Patented Riser Ventilated Portable Foldable Compatible with MacBook Notebook Table...",
+  "discount_price": 389,
+  "actual_price": 1499,
+  "ratings": 4.3,
+  "no_of_ratings": 26553,
+  "image": "https://m.media-amazon.com/images/I/71Zf9uUp+GL._AC_UL320_.jpg",
+  "main_category": "home & kitchen",
+  "sub_category": "All Home & Kitchen",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aada"
+  },
+  "name": "Meat Up Chicken Flavour Real Chicken Dog Biscuit For All Life Stages, 1kg (Buy 1 Get 1 Free)",
+  "discount_price": 328,
+  "actual_price": 349,
+  "ratings": 4.2,
+  "no_of_ratings": 36349,
+  "image": "https://m.media-amazon.com/images/I/81eKrwo4VKL._AC_UL320_.jpg",
+  "main_category": "pet supplies",
+  "sub_category": "All Pet Supplies",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aadb"
+  },
+  "name": "Purepet Ocean Fish Adult Dry Cat Food, 1.2kg",
+  "discount_price": 179,
+  "actual_price": 239,
+  "ratings": 4.2,
+  "no_of_ratings": 14162,
+  "image": "https://m.media-amazon.com/images/I/71N9qXb6rCL._AC_UL320_.jpg",
+  "main_category": "pet supplies",
+  "sub_category": "All Pet Supplies",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aadc"
+  },
+  "name": "Purepet Mackerel Adult Dry Cat Food, 1.2 kg",
+  "discount_price": 185,
+  "actual_price": 239,
+  "ratings": 4.2,
+  "no_of_ratings": 10211,
+  "image": "https://m.media-amazon.com/images/I/71CZOKVVeVL._AC_UL320_.jpg",
+  "main_category": "pet supplies",
+  "sub_category": "All Pet Supplies",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aadd"
+  },
+  "name": "Drools Chicken and Egg Adult Dry Dog Food, 3 kg with Free 1.2 kg",
+  "discount_price": 615,
+  "actual_price": 699,
+  "ratings": 4.2,
+  "no_of_ratings": 13418,
+  "image": "https://m.media-amazon.com/images/I/71NrhVNqHhL._AC_UL320_.jpg",
+  "main_category": "pet supplies",
+  "sub_category": "All Pet Supplies",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aade"
+  },
+  "name": "Pedigree Adult Dry Dog Food, Chicken & Vegetables Flavour, 3kg Pack",
+  "discount_price": 696,
+  "actual_price": 810,
+  "ratings": 4.4,
+  "no_of_ratings": 19718,
+  "image": "https://m.media-amazon.com/images/I/61Gm70FJSxL._AC_UL320_.jpg",
+  "main_category": "pet supplies",
+  "sub_category": "All Pet Supplies",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aadf"
+  },
+  "name": "Pedigree Adult Wet Dog Food, Chicken and Liver Chunks Flavour in Gravy with Vegetables, 15 Pouches (15 x 70g)",
+  "discount_price": 660,
+  "actual_price": 750,
+  "ratings": 4.5,
+  "no_of_ratings": 11543,
+  "image": "https://m.media-amazon.com/images/I/61AVZoaBbXL._AC_UL320_.jpg",
+  "main_category": "pet supplies",
+  "sub_category": "All Pet Supplies",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aae0"
+  },
+  "name": "Pedigree Puppy Dry Dog Food, Chicken & Milk, 3kg Pack",
+  "discount_price": 646,
+  "actual_price": 760,
+  "ratings": 4.4,
+  "no_of_ratings": 20750,
+  "image": "https://m.media-amazon.com/images/I/61IUJIyK2yL._AC_UL320_.jpg",
+  "main_category": "pet supplies",
+  "sub_category": "All Pet Supplies",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aae1"
+  },
+  "name": "Drools Absolute Calcium Bone Jar, Dog Treats For All Life Stages - 40 Pieces (600g)",
+  "discount_price": 391,
+  "actual_price": 460,
+  "ratings": 4.2,
+  "no_of_ratings": 8856,
+  "image": "https://m.media-amazon.com/images/I/6140NhEjjiL._AC_UL320_.jpg",
+  "main_category": "pet supplies",
+  "sub_category": "All Pet Supplies",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aae2"
+  },
+  "name": "Drools Chicken and Egg Puppy Dry Dog Food, 3kg with Free 1.2kg",
+  "discount_price": 594,
+  "actual_price": 699,
+  "ratings": 4,
+  "no_of_ratings": 10007,
+  "image": "https://m.media-amazon.com/images/I/71ZTpFAClLL._AC_UL320_.jpg",
+  "main_category": "pet supplies",
+  "sub_category": "All Pet Supplies",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aae3"
+  },
+  "name": "Drools Optimum Performance Adult Dry Dog Food, Chicken Flavor, 10kg",
+  "discount_price": 1231,
+  "actual_price": 1499,
+  "ratings": 4.3,
+  "no_of_ratings": 5978,
+  "image": "https://m.media-amazon.com/images/I/71PKpcLG-3L._AC_UL320_.jpg",
+  "main_category": "pet supplies",
+  "sub_category": "All Pet Supplies",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aae4"
+  },
+  "name": "Astroghar Mini Hand Tally Counter Finger Ring Digital Electronic Head Count,Japa Counter Mini Hand Tally Counter Finger Ri...",
+  "discount_price": 75,
+  "actual_price": 250,
+  "ratings": 4.1,
+  "no_of_ratings": 1429,
+  "image": "https://m.media-amazon.com/images/I/61rXpMc4c8L._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Sports, Fitness & Outdoors",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aae5"
+  },
+  "name": "GKI Superb 3 Star ABS Plastic 40 Table Tennis Ball (6 Pc), White",
+  "discount_price": 399,
+  "actual_price": 492,
+  "ratings": 4.2,
+  "no_of_ratings": 1166,
+  "image": "https://m.media-amazon.com/images/I/61KlbXItQzL._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Sports, Fitness & Outdoors",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aae6"
+  },
+  "name": "Yonex Mavis 2000 Green Cap Nylon Shuttlecock, Pack of 6 - Made in Japan",
+  "discount_price": 860,
+  "actual_price": 1220,
+  "ratings": 4.1,
+  "no_of_ratings": 825,
+  "image": "https://m.media-amazon.com/images/I/51Fss0e0-CL._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Sports, Fitness & Outdoors",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aae7"
+  },
+  "name": "Cable World Mid-Sized Foosball Mini Football Table Soccer Game, 51X31X10 cm 20 Inches for Kid",
+  "discount_price": 1498,
+  "actual_price": 3599,
+  "ratings": 4.1,
+  "no_of_ratings": 2776,
+  "image": "https://m.media-amazon.com/images/I/71vC16mUxTL._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Sports, Fitness & Outdoors",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aae8"
+  },
+  "name": "Li-Ning Bolt Gold (6 in 1 Nylon Shuttlecock), Yellow",
+  "discount_price": 596,
+  "actual_price": 1399,
+  "ratings": 3.7,
+  "no_of_ratings": 2285,
+  "image": "https://m.media-amazon.com/images/I/71LQojnStBL._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Sports, Fitness & Outdoors",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aae9"
+  },
+  "name": "Tynor Knee Cap Air Pro, Black & Orange, Medium, Pack of 2",
+  "discount_price": 360,
+  "actual_price": 399,
+  "ratings": 4.1,
+  "no_of_ratings": 2326,
+  "image": "https://m.media-amazon.com/images/I/71-DrhRNBCL._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Sports, Fitness & Outdoors",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaea"
+  },
+  "name": "AmazonBasics Cylinder Bagless Vacuum Cleaner with Power Suction, Low Sound, High Energy Efficiency and 2 Years Warranty (...",
+  "discount_price": 3399,
+  "actual_price": 6000,
+  "ratings": 4.1,
+  "no_of_ratings": 12218,
+  "image": "https://m.media-amazon.com/images/I/71-QiEqDpZL._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Sports, Fitness & Outdoors",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaeb"
+  },
+  "name": "Feroc 440 Aluminum Set of 2 Badminton Racket with 3 Pieces Feather shuttles with Full Cover Fulfilled by Amazon., White",
+  "discount_price": 500,
+  "actual_price": 999,
+  "ratings": 4.1,
+  "no_of_ratings": 96,
+  "image": "https://m.media-amazon.com/images/I/61mgERagWbL._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Sports, Fitness & Outdoors",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaec"
+  },
+  "name": "RUBX Rubber Coated Professional Exercise Hex Fixed Dumbbells (Pack of Two) 5 Kg x 2pc (Total = 10 kg) Black",
+  "discount_price": 1599,
+  "actual_price": 3000,
+  "ratings": 4.6,
+  "no_of_ratings": 6577,
+  "image": "https://m.media-amazon.com/images/I/61mUc9vBJqL._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Sports, Fitness & Outdoors",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaed"
+  },
+  "name": "FreshDcart 5-Digit Tally Clicker Counter Finger Clicker Ring Electronic Light Digital Counting Machine for Cricket Umpire ...",
+  "discount_price": 180,
+  "actual_price": 999,
+  "ratings": 3.9,
+  "no_of_ratings": 327,
+  "image": "https://m.media-amazon.com/images/I/51kz4grlPqL._AC_UL320_.jpg",
+  "main_category": "sports & fitness",
+  "sub_category": "All Sports, Fitness & Outdoors",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaee"
+  },
+  "name": "Aqualogica Glow+ Dewy Sunscreen SPF 50 PA+++ For UVA/B & Blue Light Protection, for Glowing & Well Protected Skin, Cream, 50G",
+  "discount_price": 351,
+  "actual_price": 399,
+  "ratings": 4.2,
+  "no_of_ratings": 3628,
+  "image": "https://m.media-amazon.com/images/I/51TSC6UogxL._AC_UL320_.jpg",
+  "main_category": "stores",
+  "sub_category": "Amazon Fashion",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaef"
+  },
+  "name": "MARVIK Soft Silicone Adjustable Band Strap Compatible for Oneplus Smart Band & Oppo Smart Band",
+  "discount_price": 249,
+  "actual_price": 999,
+  "ratings": 3.9,
+  "no_of_ratings": 291,
+  "image": "https://m.media-amazon.com/images/I/51vYDop04SL._AC_UL320_.jpg",
+  "main_category": "stores",
+  "sub_category": "Amazon Fashion",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaf0"
+  },
+  "name": "108 Panchatantra Stories for Children (Illustrated) - Story Book for Kids - Moral Stories - Bedtime Stories - 3 Years to 1...",
+  "discount_price": 125,
+  "actual_price": 160,
+  "ratings": 4.4,
+  "no_of_ratings": 2950,
+  "image": "https://m.media-amazon.com/images/I/81VJ+MAc7YL._AC_UL320_.jpg",
+  "main_category": "stores",
+  "sub_category": "Amazon Fashion",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaf1"
+  },
+  "name": "Black and White and Blue: Adult Cinema From the Victorian Age to the VCR",
+  "discount_price": 0,
+  "actual_price": 584.16,
+  "ratings": 4.2,
+  "no_of_ratings": 8,
+  "image": "https://m.media-amazon.com/images/I/51RIhaW3t1L._AC_UL320_.jpg",
+  "main_category": "stores",
+  "sub_category": "Amazon Fashion",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaf2"
+  },
+  "name": "SAFARI 15 Ltrs Sea Blue Casual/School/College Backpack (DAYPACKNEO15CBSEB)",
+  "discount_price": 299,
+  "actual_price": 799,
+  "ratings": 4,
+  "no_of_ratings": 17985,
+  "image": "https://m.media-amazon.com/images/I/61kmCas5OCL._AC_UL320_.jpg",
+  "main_category": "stores",
+  "sub_category": "Amazon Fashion",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaf3"
+  },
+  "name": "The Derma Co 1% Hyaluronic Sunscreen Aqua Ultra Light Gel with SPF 50 PA++++ For Broad Spectrum, UV A, UV B & Blue Light P...",
+  "discount_price": 448,
+  "actual_price": 499,
+  "ratings": 4.3,
+  "no_of_ratings": 5830,
+  "image": "https://m.media-amazon.com/images/I/51x3cj+-iUL._AC_UL320_.jpg",
+  "main_category": "stores",
+  "sub_category": "Amazon Fashion",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaf4"
+  },
+  "name": "Noise ColorFit Pulse Grand Smart Watch with 1.69\"(4.29cm) HD Display, 60 Sports Modes, 150 Watch Faces, Fast Charge, Spo2,...",
+  "discount_price": 1299,
+  "actual_price": 3999,
+  "ratings": 4,
+  "no_of_ratings": 99745,
+  "image": "https://m.media-amazon.com/images/I/61Q0R5cdxWL._AC_UL320_.jpg",
+  "main_category": "stores",
+  "sub_category": "Amazon Fashion",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaf5"
+  },
+  "name": "New Fastrack Reflex Beat+ 1.69” UltraVU Display|500 Nits Brightness|60 Sports Modes|24*7 Heart Rate Monitor|SpO2 Monitor|S...",
+  "discount_price": 1695,
+  "actual_price": 3495,
+  "ratings": 4,
+  "no_of_ratings": 598,
+  "image": "https://m.media-amazon.com/images/I/71E-b8o-1hL._AC_UL320_.jpg",
+  "main_category": "stores",
+  "sub_category": "Amazon Fashion",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaf6"
+  },
+  "name": "Soundproof Earmuffs, Anti-Noise Earmuffs Lightweight Compact Adjustment Foldable for Worker for for Shooter(Green)",
+  "discount_price": 3619,
+  "actual_price": 7238,
+  "ratings": 0,
+  "no_of_ratings": 0,
+  "image": "https://m.media-amazon.com/images/I/51qHSeg28PS._AC_UL320_.jpg",
+  "main_category": "stores",
+  "sub_category": "Amazon Fashion",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68934a2388d14d6b12b3aaf7"
+  },
+  "name": "ZORBES® Dust Cover for SONY PS5 Console, Dust Proof Cover Protective Case Anti Scratch Waterproof Case for Sony PlayStatio...",
+  "discount_price": 939,
+  "actual_price": 1262,
+  "ratings": 3.8,
+  "no_of_ratings": 10,
+  "image": "https://m.media-amazon.com/images/I/41YdhN7LJ+L._AC_UL320_.jpg",
+  "main_category": "stores",
+  "sub_category": "Amazon Fashion",
+  "quantity": 0,
+  "description": "",
+  "__v": 0
+}]

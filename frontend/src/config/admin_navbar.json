@@ -1,0 +1,8 @@
+[    
+    {"id":"1","name":"Dash Board","link":"/admin"},
+     {"id":"2","name":"Manage Orders","link":"/admin/manage-orders"},
+     {"id":"3","name":"Add Product","link":"/admin/add-product"},
+    {"id":"4","name":"Add Category","link":"/admin/add-category"},
+    {"id":"5","name":"Manage Users","link":"/admin/manage-users"}
+  
+ ]

@@ -78,6 +78,13 @@ web_modules/
 .next
 out
 
+# Next.js build files
+.next
+frontend/.next
+
+# Node modules (important)
+node_modules
+
 # Nuxt.js build / generate output
 .nuxt
 dist

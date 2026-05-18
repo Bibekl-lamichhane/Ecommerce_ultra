@@ -31,15 +31,14 @@ const filteredProducts = products.filter((products) => {
   return discountPercent >= 50;
 });
   return (
-       <div className="p-4">
-
+       <div>
       {Loading ? (
         <div className="flex justify-center items-center h-60">
           <CircularProgress size={40} />
         </div>
       ) : (
         <div className="flex flex-col gap-2">
-             <div className="text-3xl text-orange-500 font-bold m-8">Shop Now: </div>
+              <div className="text-3xl text-orange-400 font-bold ml-8">Flash Sale : </div>
              <div className='grid grid-cols-2 gap-4 p-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5'>
              {filteredProducts.map((items) => (
              <ProductCard key={items._id} product={items} />

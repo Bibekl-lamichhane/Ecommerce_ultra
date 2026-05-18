@@ -85,13 +85,13 @@ const page = () => {
   };
 
   return (
-    <div className="w-full flex flex-col items-center mx-40">
-      <h1 className="text-3xl font-bold m-10 text-orange-500">Add Product:</h1>
+    <div className="w-full flex flex-col items-center p-6">
+      <h1 className="text-3xl font-bold m-10 text-orange-400">Add Product:</h1>
       <form className="flex flex-col gap-y-8 text-xl w-full" onSubmit={handelAddProduct}>
 
         {/* Basic Info */}
         <TextField label="Name" name="name" variant="outlined" required />
- {/* Categories */}
+        {/* Categories */}
         <div className="flex gap-6">
           <FormControl variant="outlined" sx={{ flex: 1 }}>
             <InputLabel>Main Category</InputLabel>
@@ -169,7 +169,7 @@ const page = () => {
 
         <FileUploadButton FileChange={handelFileChange} />
 
-        <button className="cursor-pointer bg-amber-500 text-white p-3 text-sm rounded-2xl mb-2" type="submit">
+        <button className="cursor-pointer bg-amber-500 text-slate-50 p-3 text-sm rounded-2xl mb-2" type="submit">
           Add Product
         </button>
       </form>

@@ -80,7 +80,7 @@ const handelSubmit = async (values, { setSubmitting }) => {
           className="opacity-80 w-auto h-auto"
         />
       </div>
-      <div className="flex flex-col items-center justify-center w-full max-w-lg mx-auto bg-white ">
+      <div className="flex flex-col items-center justify-center w-full max-w-lg mx-auto bg-slate-50 ">
         <div
           className={`${candal.className} text-3xl md:text-4xl font-bold mb-4 py-10  `}
         >
@@ -104,7 +104,7 @@ const handelSubmit = async (values, { setSubmitting }) => {
                 name="username"
                 type="text"
                 placeholder="Username"
-                className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
               />
              
               <Field
@@ -112,7 +112,7 @@ const handelSubmit = async (values, { setSubmitting }) => {
                 type="text"
                 placeholder="Phone Number"
                 validate={validatePhonenumber}
-                className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
               />
               {errors.phonenumber && touched.phonenumber ? (
                 <div className="text-red-500 text-sm">{errors.phonenumber}</div>
@@ -122,7 +122,7 @@ const handelSubmit = async (values, { setSubmitting }) => {
                 name="email"
                 type="email"
                 placeholder="Email"
-                className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
               />
               {errors.email && touched.email ? (
                 <div className="text-red-500 text-sm">{errors.email}</div>
@@ -131,14 +131,14 @@ const handelSubmit = async (values, { setSubmitting }) => {
                 name="password"
                 type="password"
                 placeholder="Password"
-                className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
               />
               {errors.password && touched.password ? (
                 <div>{errors.password}</div>
               ) : null}
               <button
                 type="submit"
-                className="bg-orange-500 text-white py-2 px-4 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 cursor-pointer"
+                className="bg-orange-400 text-slate-50 py-2 px-4 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400 cursor-pointer"
               >
                 Sign Up
               </button>
@@ -146,7 +146,7 @@ const handelSubmit = async (values, { setSubmitting }) => {
           )}
         </Formik>
         <div>
-          <div className="text-orange-500 font-extralight flex flex-col justify-center items-center ">
+          <div className="text-orange-400 font-extralight flex flex-col justify-center items-center ">
             <div className="flex flex-col gap-2 w-full items-center">
               <div className="my-4">Or login with</div>
               <Button

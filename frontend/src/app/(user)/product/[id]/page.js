@@ -6,7 +6,6 @@ import ReactStars from "react-stars";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useDispatch, useSelector } from "react-redux";
 import { setWishItems } from "@/redux/reducerslices/productSlice";
-
 const Page = () => {
   const params = useParams(); // ✅ correct
   const [productDetails, setProductDetails] = useState(null);
@@ -35,13 +34,13 @@ const Page = () => {
   return (
      
 <div className="text-gray-600 body-font overflow-hidden flex justify-center items-center">
-  <div className="container px-5 py-24 mx-auto">
+  <div className="container px-5 p-10 mx-auto">
     <div className="lg:w-4/5 mx-auto flex flex-wrap">
       <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src={imageUrl}/>
-      <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+      <div className="lg:w-1/2 w-full lg:p-10 p-4">
       <div className="flex gap-5 my-3 items-center">
         <h2 className="text-sm title-font text-gray-500 ">{productDetails.usage}</h2>  {megasale && (
-            <span className="flex justify-center items-center rounded-full bg-orange-500 p-2 text-xs font-medium text-white ">
+            <span className="flex justify-center items-center rounded-full bg-orange-400 p-2 text-xs font-medium text-slate-50 ">
               Mega Sale
             </span>
           )}
@@ -80,8 +79,8 @@ const Page = () => {
         <p className="leading-relaxed">{productDetails.description}</p>
         <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
           <div className="flex">
-            <span className="mr-3">Color</span>
-            <button className={`border-2 border-gray-300 ml-1 bg-${productDetails.colour}-500 rounded-full w-6 h-6 focus:outline-none`}></button>
+            <span className="mr-3">Color :</span>
+            <span>{productDetails.colour}</span>
           </div>
           <div className="flex ml-6 items-center">
             <span className="mr-3">Size</span>
@@ -102,11 +101,11 @@ const Page = () => {
         </div>
         <div className="flex gap-4">
           <span className="title-font font-medium text-2xl text-gray-900">NRS {productDetails.actual_price}</span>
-          <button className="flex ml-auto text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded hover:cursor-pointer">Add to cart</button>
+          <button className="flex ml-auto text-slate-50 bg-orange-400 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded hover:cursor-pointer">Add to cart</button>
         
          {/* Wishlist */ }
       <IconButton
-        className=" bg-white p-8"
+        className=" bg-slate-50 p-8"
         
       >
         <FavoriteIcon className= {existInWishlist===true?"text-red-500" : "text-gray-500"} onClick={() => dispatch(setWishItems(productDetails))} />

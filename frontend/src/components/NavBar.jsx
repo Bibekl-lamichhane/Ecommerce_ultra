@@ -1,7 +1,6 @@
 "use client";
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
@@ -10,7 +9,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import { useSelector, useDispatch } from "react-redux";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-import { Button } from "@mui/material";
+import { Button, List, ListItem, ListItemButton, ListItemText } from "@mui/material";
 import SearchBar from "./SearchBar";
 import { setLogout } from "@/redux/reducerslices/userSlice";
 import { useRouter } from "next/navigation";
@@ -21,7 +20,12 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Avatar from '@mui/material/Avatar';
 import Divider from '@mui/material/Divider';
 import ListItemIcon from '@mui/material/ListItemIcon';
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
+import user_navbar from '@/config/user_navbar'
+import CancelIcon from '@mui/icons-material/Cancel';
+import Link from "next/link";
 const NavBar = () => {
   const router = useRouter();
   const dispatch = useDispatch();
@@ -29,9 +33,10 @@ const NavBar = () => {
   const cartItems=useSelector((state)=>state.product.cartItems)
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-
+const [open, setOpen] = React.useState(false);
   const isMenuOpen = Boolean(anchorEl);
-
+    const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+    
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -100,11 +105,50 @@ const NavBar = () => {
         </MenuItem>
     </Menu>
   );
-  const renderMobileMenu = (
-  <></>
-  );
+  
 
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
+  };
+
+  const DrawerList = (
+      <div className="bg-orange-400 text-slate-50 text-2xl font-bold h-screen">
+      <div className="flex text-xl font-extrabold">
+      <Box  role="presentation" onClick={toggleDrawer(false)}>
+         <div className=''>
+          <div className='ml-95 pt-6 '><CancelIcon fontSize="large" /></div>
+           <div className='flex justify-center items-center py-6'>
+           <div><img
+              src="/Daraz.png"
+              alt="Logo"
+              className="h-8 w-auto mr-2 inline-block"
+            /></div> 
+          </div> 
+          </div>
+           <hr/>
+      <List >     
+          {user_navbar.map((text, key) => (
+            <div className="hover:text-orange-400 hover:font-bold w-screen pl-6 my-10" key={key}>
+              <Link href={text.link}>
+                <ListItem disablePadding>
+                  <ListItemButton key={text.id}>
+                    <ListItemText
+                      primary={text.name}
+                      key={text.id}
+                      disableTypography="true"
+                      sx={{ fontSize: "20px", margin: "10px" }}
+                    />
+                  </ListItemButton>
+                </ListItem>
+              </Link>
+            </div>
+          ))}
+        </List>  
+      </Box>
+      </div>
+      </div>)
   return (
+    <div className='fixed w-screen z-50'>
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" color="warning">
         <Toolbar>
@@ -114,7 +158,10 @@ const NavBar = () => {
             component="div"
             sx={{ display: {  xs: "hidden" ,md: "none" } }}
           >
-            <MenuIcon onClick={handleMobileMenuOpen}/>
+      <Button onClick={toggleDrawer(true) }><MenuIcon sx={{color:"white"}} fontSize="large"/></Button>
+      <Drawer open={open} onClose={toggleDrawer(false)}>
+        {DrawerList}
+      </Drawer>
           </Typography>
           <Typography
             variant="h6"
@@ -134,15 +181,15 @@ const NavBar = () => {
               <div className="flex items-center mx-2 md:mx-6">
                
                 <div>
-                  <IconButton
+                  <Link href='/cart-items'><IconButton
                     size="large"
                     aria-label="show 4 new mails"
                     color="inherit"
                   >
                     <Badge badgeContent={cartItems?.length} color="error">
-                     <ShoppingCartIcon/>
+                    <ShoppingCartIcon/>
                     </Badge>
-                  </IconButton>
+                  </IconButton></Link>
                    {token&&
                   <IconButton
                     size="large"
@@ -184,9 +231,8 @@ const NavBar = () => {
           </Box>
         </Toolbar>
       </AppBar>
-      {renderMobileMenu}
       {token && renderMenu}
-    </Box>
+    </Box></div>
   );
 };
 export default NavBar;

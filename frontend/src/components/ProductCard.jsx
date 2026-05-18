@@ -10,9 +10,7 @@ import {
   IconButton,
 } from "@mui/material";
 import { useRouter } from 'next/navigation'
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import { useDispatch, useSelector } from "react-redux";
-import { setWishItems } from "@/redux/reducerslices/productSlice";
+import { useDispatch } from "react-redux";
 
 const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
@@ -27,10 +25,7 @@ const ProductCard = ({ product }) => {
   } = product;
   const backendURL = "http://localhost:8000";
   const imageUrl = `${backendURL}/uploads/${product.image}`;
-const wishLists=useSelector(state=>state.product.wishLists)
-const existInWishlist = wishLists?.some(
-  item => item._id === product._id
-); 
+
   const megasale =
     ((actual_price - discount_price) / actual_price) * 100 >= 50;
   return (
@@ -41,14 +36,7 @@ const existInWishlist = wishLists?.some(
       }} onClick={()=>router.push(`/product/${_id}`)}
       
     >
-      {/* Wishlist */ }
-      <IconButton
-        className="absolute! right-4 top-4 z-10 bg-white/90!"
-        
-      >
-        <FavoriteIcon className= {existInWishlist===true?"text-red-500" : "text-gray-500"} onClick={() => dispatch(setWishItems(product))} />
-      </IconButton>
-
+     
       {/* Image */}
       <div className="aspect-square overflow-hidden bg-gray-100 p-3">
         <CardMedia
@@ -89,7 +77,7 @@ const existInWishlist = wishLists?.some(
           />
 
           {megasale && (
-            <span className="rounded-full bg-amber-500 px-2 py-1 text-xs font-medium text-white">
+            <span className=" flex justify-center items-center rounded-full bg-amber-500 px-2 py-1 text-xs font-medium text-slate-50">
               Mega Sale
             </span>
           )}

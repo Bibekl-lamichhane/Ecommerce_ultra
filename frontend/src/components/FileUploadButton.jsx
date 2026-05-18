@@ -10,7 +10,7 @@ const VisuallyHiddenInput = styled('input')({
   position: 'absolute',
   bottom: 0,
   left: 0,
-  whiteSpace: 'nowrap',
+  Space: 'nowrap',
   width: 1,
 });
 

@@ -72,7 +72,7 @@ const page = () => {
   };
 
   return (
-    <div className=" w-full flex flex-col items-center mx-40 gap-8">
+    <div className="flex flex-col items-center  gap-10 ">
       <h1 className="text-3xl font-bold m-10">Add Category:</h1>
       <form
         className="flex flex-col gap-12 text-xl  w-full"
@@ -87,7 +87,7 @@ const page = () => {
             variant="outlined"
           />
           <button
-            className="cursor-pointer bg-amber-500 text-white p-3 px-6  rounded-2xl w-60 text-x"
+            className="cursor-pointer bg-amber-500 text-slate-50 p-3 px-6  rounded-2xl w-60 text-xs md:text-xl"
             type="submit"
           >
             Add Main Category
@@ -107,7 +107,7 @@ const page = () => {
             variant="outlined"
           />
           <button
-            className="cursor-pointer bg-amber-500 text-white p-3 px-6  rounded-2xl w-60 text-x"
+            className="cursor-pointer bg-amber-500 text-slate-50 p-3 px-6  rounded-2xl w-60 text-xs md:text-xl"
             type="submit"
           >
             Add Sub Category
@@ -127,7 +127,7 @@ const page = () => {
             variant="outlined"
           />
           <button
-            className="cursor-pointer bg-amber-500 text-white p-3 px-6  rounded-2xl w-60 text-x"
+            className="cursor-pointer bg-amber-500 text-slate-50 p-3 px-6  rounded-2xl w-60 text-xs md:text-xl"
             type="submit"
           >
             Add Usage
@@ -147,7 +147,7 @@ const page = () => {
             variant="outlined"
           />
           <button
-            className="cursor-pointer bg-amber-500 text-white p-3 px-6  rounded-2xl w-60 text-x"
+            className="cursor-pointer bg-amber-500 text-slate-50 p-3 px-6  rounded-2xl w-60 text-xs md:text-xl"
             type="submit"
           >
             Add Product Type

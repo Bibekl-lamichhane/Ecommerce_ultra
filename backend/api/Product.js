@@ -1,7 +1,7 @@
 const express = require("express");
-const { fetchCategory, addCategory } = require("../controller/Product");
-const { addProduct,fetchProducts } = require("../controller/Product");
 const router = express.Router();
+const {addProduct,fetchProducts,getProductDetails } = require("../controller/Product");
+
 const multer  = require('multer')
 //image upload 
 const storage = multer.diskStorage({
@@ -16,9 +16,8 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage })
 
-router.get('/fetch-category',fetchCategory)
-router.get('/fetch-products',fetchProducts)
-router.post('/add-product',addProduct)
-router.post('/add-category',upload.single('image'),addCategory)
+router.get('/products',fetchProducts)
+router.get('/product/:id',getProductDetails)
+router.post('/product',upload.single('image'),addProduct)
 
 module.exports=router

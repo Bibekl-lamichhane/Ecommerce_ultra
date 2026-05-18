@@ -12,10 +12,10 @@ const layout = ({children}) => {
         <NavBar/>
         <div className="md:hidden bg-amber-600 text-white  m-3 rounded-xl"><SearchBar/></div>
         <div className='flex'>
-          <div className='w-[230]'>
-            <SideBar data={user_navbar} key={user_navbar.id}/>
+          <div className=' ml-4'>
+            <SideBar data={user_navbar} key={user_navbar._id}/>
           </div>
-          <div className='ml-[230]px flex-1'>{children}</div>
+          <div className='md:ml-[230]'>{children}</div>
         </div>
         <Footer/>
     </div>

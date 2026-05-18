@@ -9,7 +9,7 @@ import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
 import Link from "next/link";
 export default function SideBar(props) {
   return (
-    <div className="w-[230] my-30  fixed  ">
+    <div className="hidden md:block  md:w-[230] my-30  fixed  ">
       {(props.data[0].link=='/admin') ? <div className="flex text-xl font-extrabold text-orange-500 p-8">
         <AdminPanelSettingsIcon sx={{ fontSize: "40px" }} />
         <ListItemButton>AdminPanel</ListItemButton>

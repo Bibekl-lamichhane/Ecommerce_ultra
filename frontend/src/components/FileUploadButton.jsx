@@ -33,8 +33,9 @@ export default function FileUploadButton({FileChange}) {
       Upload Product Image
       <VisuallyHiddenInput
         type="file"
+        name="image"
+        accept="image/*"
         onChange={handelFileChange}
-        multiple
       />
     </Button>
   );

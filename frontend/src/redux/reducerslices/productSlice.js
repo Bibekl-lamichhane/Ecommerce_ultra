@@ -10,27 +10,28 @@ export const productSlice = createSlice({
   name: 'product',
   initialState,
   reducers: {
+
   setCartItems(state, action) {
       const item=action.payload;
-      const exist=state.cartsItems.find(i=>i._id.$oid==item.id.$oid)
+      const exist=state.cartsItems.find(i=>i._id==item._id)
       if(exist){
-        //
       }
       state.cartItems.push(item)  
     },
+
 setWishItems: (state, action) => {
   const item = action.payload;
 
-  const exists = state.wishLists.find(
-    i => i._id.$oid === item._id.$oid
+  const exists = state.wishLists?.find(
+    i => i._id === item._id
   );
 
   if (exists) {
     state.wishLists = state.wishLists.filter(
-      i => i._id.$oid !== item._id.$oid
+      i => i._id !== item._id
     );
   } else {
-    state.wishLists.push(item);
+    state.wishLists?.push(item);
   }
 }
   }

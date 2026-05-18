@@ -9,34 +9,36 @@ import {
   Typography,
   IconButton,
 } from "@mui/material";
-
+import { useRouter } from 'next/navigation'
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useDispatch, useSelector } from "react-redux";
 import { setWishItems } from "@/redux/reducerslices/productSlice";
 
 const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
+  const router=useRouter()
   const {
     name,
     sub_category,
     discount_price,
     actual_price,
     ratings,
+    _id
   } = product;
   const backendURL = "http://localhost:8000";
   const imageUrl = `${backendURL}/uploads/${product.image}`;
 const wishLists=useSelector(state=>state.product.wishLists)
-const existInWishlist = wishLists.some(
-  item => item._id=== product._id
-);
+const existInWishlist = wishLists?.some(
+  item => item._id === product._id
+); 
   const megasale =
     ((actual_price - discount_price) / actual_price) * 100 >= 50;
   return (
     <Card
-      className="group relative flex h-full flex-col rounded-2xl shadow-sm transition-all duration-300 hover:shadow-xl"
+      className="group relative flex h-full flex-col rounded-2xl shadow-sm transition-all duration-300 hover:shadow-xl cursor-pointer"
       sx={{
         overflow: "hidden",
-      }}
+      }} onClick={()=>router.push(`/product/${_id}`)}
       
     >
       {/* Wishlist */ }

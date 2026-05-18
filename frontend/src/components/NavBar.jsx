@@ -9,7 +9,6 @@ import Badge from "@mui/material/Badge";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import { useSelector, useDispatch } from "react-redux";
-import AccountCircle from "@mui/icons-material/AccountCircle";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import { Button } from "@mui/material";
 import SearchBar from "./SearchBar";
@@ -22,7 +21,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Avatar from '@mui/material/Avatar';
 import Divider from '@mui/material/Divider';
 import ListItemIcon from '@mui/material/ListItemIcon';
-
+import MenuIcon from '@mui/icons-material/Menu';
 const NavBar = () => {
   const router = useRouter();
   const dispatch = useDispatch();
@@ -32,7 +31,6 @@ const NavBar = () => {
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
   const isMenuOpen = Boolean(anchorEl);
-  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -102,77 +100,22 @@ const NavBar = () => {
         </MenuItem>
     </Menu>
   );
-  const mobileMenuId = "primary-search-account-menu-mobile";
   const renderMobileMenu = (
-    <Menu
-      anchorEl={mobileMoreAnchorEl}
-      anchorOrigin={{
-        vertical: "top",
-        horizontal: "right",
-      }}
-      id={mobileMenuId}
-      keepMounted
-      transformOrigin={{
-        vertical: "top",
-        horizontal: "right",
-      }}
-      open={isMobileMenuOpen}
-      onClose={handleMobileMenuClose}
-    >
-      <MenuItem>
-        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={cartItems.length} color="error">{cartItems.length}
-            <ShoppingCartIcon />
-          </Badge>
-        </IconButton>
-        <p>Cart Items</p>
-      </MenuItem>
-      <MenuItem>
-        <IconButton
-          size="large"
-          aria-label="show 17 new notifications"
-          color="inherit"
-        >
-          <Badge badgeContent={17} color="error">
-            <NotificationsIcon />
-          </Badge>
-        </IconButton>
-        <p>Notifications</p>
-      </MenuItem>
-      {token && (
-        <MenuItem onClick={handleProfileMenuOpen}>
-          <IconButton
-            size="large"
-            aria-label="account of current user"
-            aria-controls="primary-search-account-menu"
-            aria-haspopup="true"
-            color="inherit"
-          >
-            <AccountCircle  />
-          </IconButton>
-          <p>Profile</p>
-        </MenuItem>
-      )}
-    </Menu>
+  <></>
   );
 
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" color="warning">
         <Toolbar>
-          {/* <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
+          <Typography
+            variant="h6"
+            noWrap
+            component="div"
+            sx={{ display: {  xs: "hidden" ,md: "none" } }}
           >
-            <div className="block">
-               <Badge badgeContent={cartItems.length} color="error">
-            <ShoppingCartIcon />
-          </Badge>
-            </div>
-          </IconButton> */}
+            <MenuIcon onClick={handleMobileMenuOpen}/>
+          </Typography>
           <Typography
             variant="h6"
             noWrap
@@ -196,7 +139,7 @@ const NavBar = () => {
                     aria-label="show 4 new mails"
                     color="inherit"
                   >
-                    <Badge badgeContent={cartItems.length} color="error">
+                    <Badge badgeContent={cartItems?.length} color="error">
                      <ShoppingCartIcon/>
                     </Badge>
                   </IconButton>

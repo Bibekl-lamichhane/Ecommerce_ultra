@@ -12,11 +12,22 @@ export const productSlice = createSlice({
   reducers: {
 
   setCartItems(state, action) {
-      const item=action.payload;
-      const exist=state.cartsItems.find(i=>i._id==item._id)
-      if(exist){
+      const item=action.payload
+      const exist=state.cartItems?.find(i=>i._id==item._id)
+      if(exist){ return
       }
       state.cartItems.push(item)  
+    },
+  removeCartItems(state, action) {
+      const item=action.payload
+      const exist=state.cartItems?.find(i=>i._id==item)
+      console.log(exist)
+      if(exist){ 
+        const newCartItem=state.cartItems?.filter(i=>i._id!=item)
+        // console.log(newCartItem)
+        state.cartItems=newCartItem
+      }
+      
     },
 
 setWishItems: (state, action) => {
@@ -37,6 +48,6 @@ setWishItems: (state, action) => {
   }
 })
 
-export const { setCartItems, setWishItems } = productSlice.actions
+export const { setCartItems,removeCartItems, setWishItems } = productSlice.actions
 
 export default productSlice.reducer

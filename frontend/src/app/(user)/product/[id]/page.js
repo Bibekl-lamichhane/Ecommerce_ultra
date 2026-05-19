@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import ReactStars from "react-stars";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useDispatch, useSelector } from "react-redux";
-import { setWishItems } from "@/redux/reducerslices/productSlice";
+import { setCartItems, setWishItems } from "@/redux/reducerslices/productSlice";
 const Page = () => {
   const params = useParams(); // ✅ correct
   const [productDetails, setProductDetails] = useState(null);
@@ -101,7 +101,7 @@ const Page = () => {
         </div>
         <div className="flex gap-4">
           <span className="title-font font-medium text-2xl text-gray-900">NRS {productDetails.actual_price}</span>
-          <button className="flex ml-auto text-slate-50 bg-orange-400 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded hover:cursor-pointer">Add to cart</button>
+          <button onClick={()=>dispatch(setCartItems(productDetails))} className="flex ml-auto text-slate-50 bg-orange-400 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded hover:cursor-pointer">Add to cart</button>
         
          {/* Wishlist */ }
       <IconButton

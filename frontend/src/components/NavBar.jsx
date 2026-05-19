@@ -30,6 +30,7 @@ const NavBar = () => {
   const router = useRouter();
   const dispatch = useDispatch();
   const token = useSelector((state) => state.user.token);
+  const userDetails = useSelector((state) => state.user.userDetails);
   const cartItems=useSelector((state)=>state.product.cartItems)
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -78,7 +79,7 @@ const [open, setOpen] = React.useState(false);
       
     >
         <MenuItem onClick={handleMenuClose}>
-          <Avatar  sx={{bgcolor:"orange" , width: 34, height: 34  }}/> <p className="mx-2 text-orange-400">Profile</p>
+          <Avatar  sx={{bgcolor:"orange" , width: 34, height: 34  }}/> <p className="mx-2 text-black ">{userDetails.username}</p>
         </MenuItem>
         <MenuItem onClick={handleMenuClose}>
           <Avatar  sx={{bgcolor:"orange" , width: 34, height: 34  }}/> <p className="mx-2">My account</p>
@@ -148,7 +149,7 @@ const [open, setOpen] = React.useState(false);
       </div>
       </div>)
   return (
-    <div className='fixed w-screen z-50'>
+    <div>
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" color="warning">
         <Toolbar>

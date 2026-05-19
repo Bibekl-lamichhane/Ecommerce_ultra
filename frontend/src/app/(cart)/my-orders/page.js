@@ -3,13 +3,14 @@ import React from "react";
 import DeleteIcon from '@mui/icons-material/Delete';
 import { useSelector } from "react-redux";
 const page = () => {
+  //i later will change with my orders 
   const cartItems = useSelector((state) => state.product.cartItems);
   return (
-
-      <div className="text-gray-600 body-font w-full">
+     <div className="text-gray-600 body-font w-full">
     <div className="container px-5 md:py-24 mx-auto">
     <div className="flex flex-col text-center w-full md:mb-20">
-      <h1 className=" text-2xl font-medium title-font mb-2 text-gray-900">My Orders</h1>
+           <div className="text-3xl text-orange-400 font-bold my-6 ">Your Orders: </div>
+
     </div>
     <div className=" w-full  lg:w-[225] mx-auto overflow-auto">
       <table className="table-auto w-full text-left whitespace-no-wrap">
@@ -49,7 +50,6 @@ const page = () => {
     </div>
   </div>
       </div>
-    
   );
 };
 

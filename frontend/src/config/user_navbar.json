@@ -3,6 +3,7 @@
      {"id":"2","name":"Wish List","link":"/wish-lists"},
      {"id":"3","name":"Flash Sale","link":"/flash-sale"},
     {"id":"4","name":"My orders","link":"/my-orders"},
+    {"id":"4","name":"My Cart Items","link":"/cart-items"},
     {"id":"5","name":"Settings","link":"/settings"}
     
  ]

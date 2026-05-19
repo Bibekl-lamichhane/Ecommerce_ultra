@@ -39,7 +39,7 @@ const page = () => {
   const router=useRouter()
   const handelSubmit = async (value, { setSubmitting }) => {
     try {
-      const response = await fetch("http://localhost:8000/api/login", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -51,9 +51,9 @@ const page = () => {
         dispatch(setUserDetails(data))
          toast.success(data.msg)
         if(data.users.role=='admin'){
-          router.push('/admindashboard')
+          return router.push('/admin')
         }
-        router.push('/')  
+        else router.push('/')  
       }
       else if (response.status === 401 ){
          toast.error(data.msg);

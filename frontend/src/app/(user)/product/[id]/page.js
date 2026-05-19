@@ -5,11 +5,20 @@ import { useEffect, useState } from "react";
 import ReactStars from "react-stars";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useDispatch, useSelector } from "react-redux";
-import { setCartItems, setWishItems } from "@/redux/reducerslices/productSlice";
+import { setCartItems, setWishItems ,removeWishItems} from "@/redux/reducerslices/productSlice";
+import Box from '@mui/material/Box';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+import toast from "react-hot-toast";
+
+
 const Page = () => {
   const params = useParams(); // ✅ correct
   const [productDetails, setProductDetails] = useState(null);
-
+    const [size, setSize] = useState('');
+  const cartItems=useSelector(state=>state.product.cartItems)
   const dispatch = useDispatch();
   useEffect(() => {
     const fetchProduct = async () => {
@@ -28,15 +37,39 @@ const Page = () => {
   const existInWishlist = wishLists?.some(
     item => item._id === productDetails?._id
   ); 
+  const existInCartList=cartItems?.some(item=>item._id===params.id)
     const megasale =
       ((productDetails?.actual_price - productDetails?.discount_price) / productDetails?.actual_price) * 100 >= 50;
       if(!productDetails)return(<div>Loading...</div>)
+
+  const handleChange = (event) => {
+    setSize(event.target.value);
+  };
+const handleAddToWish=()=>{
+  if(!existInWishlist){
+   dispatch(setWishItems(productDetails))
+   toast.success("Added to WishList")
+  }
+   else{
+      dispatch(removeWishItems(productDetails))
+      toast.error("Removed from WishList!")
+   } 
+}
+const handleAddToCart=()=>{
+ if (!existInCartList)
+  {
+  dispatch(setCartItems(productDetails))
+   toast.success("Added to Cart")
+ }
+else toast.error("Item is already in you Cart!")
+
+}
   return (
      
 <div className="text-gray-600 body-font overflow-hidden flex justify-center items-center">
   <div className="container px-5 p-10 mx-auto">
-    <div className="lg:w-4/5 mx-auto flex flex-wrap">
-      <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src={imageUrl}/>
+    <div className="lg:w-300  mx-auto flex flex-wrap">
+      <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-150 h-64 object-cover object-center rounded" src={imageUrl}/>
       <div className="lg:w-1/2 w-full lg:p-10 p-4">
       <div className="flex gap-5 my-3 items-center">
         <h2 className="text-sm title-font text-gray-500 ">{productDetails.usage}</h2>  {megasale && (
@@ -77,38 +110,42 @@ const Page = () => {
           </span>
         </div>
         <p className="leading-relaxed">{productDetails.description}</p>
-        <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+        <div className="flex  gap-18 mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
           <div className="flex">
             <span className="mr-3">Color :</span>
             <span>{productDetails.colour}</span>
           </div>
           <div className="flex ml-6 items-center">
-            <span className="mr-3">Size</span>
-            <div className="relative">
-              <select className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10">
-                <option>SM</option>
-                <option>M</option>
-                <option>L</option>
-                <option>XL</option>
-              </select>
-              <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
-                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4" viewBox="0 0 24 24">
-                  <path d="M6 9l6 6 6-6"></path>
-                </svg>
-              </span>
-            </div>
+             <Box sx={{ minWidth: 120 }}>
+      <FormControl fullWidth>
+        <InputLabel id="demo-simple-select-label">Size</InputLabel>
+        <Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          value={size}
+          label="Size"
+          onChange={handleChange}
+        >
+          <MenuItem value={10}>SM</MenuItem>
+          <MenuItem value={20}>M</MenuItem>
+          <MenuItem value={30}>L</MenuItem>
+          <MenuItem value={30}>XL</MenuItem>
+        </Select>
+      </FormControl>
+    </Box>
+
           </div>
         </div>
         <div className="flex gap-4">
           <span className="title-font font-medium text-2xl text-gray-900">NRS {productDetails.actual_price}</span>
-          <button onClick={()=>dispatch(setCartItems(productDetails))} className="flex ml-auto text-slate-50 bg-orange-400 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded hover:cursor-pointer">Add to cart</button>
+          <button onClick={handleAddToCart} className="flex ml-auto text-slate-50 bg-orange-400 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded hover:cursor-pointer">Add to cart</button>
         
          {/* Wishlist */ }
       <IconButton
         className=" bg-slate-50 p-8"
         
       >
-        <FavoriteIcon className= {existInWishlist===true?"text-red-500" : "text-gray-500"} onClick={() => dispatch(setWishItems(productDetails))} />
+        <FavoriteIcon className= {existInWishlist===true?"text-red-500" : "text-gray-500"} onClick={handleAddToWish} />
       </IconButton>
          
         </div>

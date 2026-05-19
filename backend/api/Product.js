@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const {addProduct,fetchProducts,getProductDetails } = require("../controller/Product");
+const {addProduct,fetchProducts,getProductDetails, deleteProducts } = require("../controller/Product");
 
 const multer  = require('multer')
 //image upload 
@@ -18,6 +18,7 @@ const upload = multer({ storage: storage })
 
 router.get('/products',fetchProducts)
 router.get('/product/:id',getProductDetails)
+router.post('/delete-product',deleteProducts)
 router.post('/product',upload.single('image'),addProduct)
 
 module.exports=router

@@ -1,62 +1,167 @@
 "use client";
-import React from "react";
-import ProductCard from "@/components/ProductCard";
-import DeleteIcon from '@mui/icons-material/Delete';
+import React, { useState } from "react";
+import DeleteIcon from "@mui/icons-material/Delete";
 import { useDispatch, useSelector } from "react-redux";
 import { removeCartItems } from "@/redux/reducerslices/productSlice";
 import Link from "next/link";
-const page = () => {
-const cartItems=useSelector(state=>state.product.cartItems)
-const dispatch=useDispatch()
- let totalPrice=0
+import { NumberSpinner } from "@/components/NumberSpinner";
+
+const Page = () => {
+  const cartItems = useSelector((state) => state.product.cartItems);
+  const dispatch = useDispatch();
+
+  const [quantities, setQuantities] = useState(() =>
+    Object.fromEntries(cartItems.map((item) => [item._id, 1]))
+  );
+
+  const handleQtyChange = (id, newQty) => {
+    setQuantities((prev) => ({ ...prev, [id]: newQty }));
+  };
+
+  const totalPrice = cartItems.reduce(
+    (sum, item) => sum + (quantities[item._id] || 1) * item.actual_price,
+    0
+  );
+
   return (
- <div className="text-gray-600 body-font ">
-   {cartItems.length>0 ?<div className="  md:py-24 mx-auto">
-     <div className="text-3xl text-orange-400 font-bold my-6 ">Your Cart Items: </div>
-    <div className=" w-full  mx-auto overflow-auto">
-      <table className="table-auto  text-left whitespace-no-wrap">
-        <thead>
-          <tr>
-            <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl md:w-30">S.N</th>
-            <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 max-w-30 lg:max-w-none">Name</th>
-            <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 md:w-80">Product Type</th>
-            <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 md:w-60 ">Price</th>
-            <th className=" px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tr rounded-br cursor-pointer text-center md:30" >Delete</th>
-          </tr>
-        </thead>
-        <tbody>{
-          cartItems?.map((item,index)=>{
-           
-            totalPrice=item.actual_price+totalPrice
-            return(<tr key={item._id}>
-            <td className="px-4 py-3 ">{index+1}</td>
-            <td className="px-4 py-3  max-w-32 truncate md:max-w-none md:whitespace-normal ">{item.name}</td>
-            <td className="px-4 py-3 ">{item.product_type}</td>
-            <td className="px-4 py-3 text-lg text-gray-900 w-">{item.actual_price}</td>
-            <td className="w-10 text-center">
-              <DeleteIcon fontSize="small" onClick={()=>dispatch(removeCartItems(item._id))}/>
-            </td>
-          </tr>)
-          })
-          }
-          <tr> 
-              <td  colSpan="2" className="px-4 py-3 title-font tracking-wider font-small text-gray-900  bg-gray-100 rounded-tl rounded-bl  text-center">Total Price:</td>
-              <td colSpan="2" className="px-4 py-3 title-font tracking-wider font-small text-gray-900  text-center ">NRS {totalPrice}</td>
-          </tr>
-        </tbody>
-      </table>
+    <div className="text-gray-600 body-font md:px-10">
+
+      {/* EMPTY CART */}
+      {cartItems.length === 0 ? (
+        <div className="h-145 w-98 flex flex-col justify-center items-center gap-10 md:w-310">
+          <div className="text-3xl text-orange-400 font-bold">
+            Your Cart is Empty
+          </div>
+          <Link href="/">
+            <div className=" hover:bg-orange-600 hover:underline bg-amber-500 px-3 py-1 text-white">
+              Shop Now
+            </div>
+          </Link>
+        </div>
+      ) : (
+        <div className="mx-auto">
+
+          {/* TITLE */}
+          <div className="text-3xl text-orange-400 font-bold pt-4 ml-6">
+            Your Cart Items
+          </div>
+
+          {/* ================= TABLE (DESKTOP) ================= */}
+          <div className="hidden md:block w-full overflow-x-auto mt-8">
+            <table className="min-w-full text-left whitespace-nowrap">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="px-4 py-3 w-12">S.N</th>
+                  <th className="px-4 py-3 w-165">Name</th>
+                  <th className="px-4 py-3 w-70">Product Type</th>
+                  <th className="px-4 py-3 w-50">Quantity</th>
+                  <th className="px-4 py-3 w-50">Price</th>
+                  <th className="px-4 py-3 text-center">Delete</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                {cartItems.map((item, index) => (
+                  <tr key={item._id} className="border-b">
+                    <td className="px-4 py-3 w-12">{index + 1}</td>
+                    <td className="px-4 py-3 max-w-xs truncate w-165">
+                      {item.name}
+                    </td>
+                    <td className="px-4 py-3 w-70">{item.product_type}</td>
+                    <td className="px-4 py-3 w-50">
+                      <NumberSpinner
+                        value={quantities[item._id] || 1}
+                        onChange={(newQty) => handleQtyChange(item._id, newQty)}
+                      />
+                    </td>
+                    <td className="px-4 py-3 w-50">
+                      NRS {(quantities[item._id] || 1) * item.actual_price}
+                    </td>
+                    <td className="px-4 py-3 text-center">
+                      <DeleteIcon
+                        className="cursor-pointer text-red-500"
+                        fontSize="small"
+                        onClick={() => dispatch(removeCartItems(item._id))}
+                      />
+                    </td>
+                  </tr>
+                ))}
+
+                {/* TOTAL */}
+                <tr className="bg-gray-100 font-bold">
+                  <td colSpan="3" className="px-4 py-3 text-center">
+                    Total Price
+                  </td>
+                  <td colSpan="2" className="px-4 py-3 text-center">
+                    NRS {totalPrice.toLocaleString()}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          {/* ================= MOBILE VIEW (CARDS) ================= */}
+          <div className="md:hidden m-4 space-y-4 w-95">
+            {cartItems?.map((item, index) => (
+              <div
+                key={item._id}
+                className="border rounded-lg p-4 shadow-sm bg-white"
+              >
+                <div className="flex justify-between">
+                  <div className="flex gap-2 items-center">
+                    <span className="font-semibold rounded-3xl bg-orange-400 text-white px-3">
+                      {index + 1}
+                    </span>
+                    <img
+                      width={100}
+                      height={100}
+                      src={`${process.env.NEXT_PUBLIC_BACKEND_URL}/uploads/${item.image}`}
+                      alt={item.name}
+                    />
+                  </div>
+                  <DeleteIcon
+                    className="text-red-500 cursor-pointer"
+                    fontSize="small"
+                    onClick={() => dispatch(removeCartItems(item._id))}
+                  />
+                </div>
+
+                <p className="mt-2 font-medium">{item.name}</p>
+                <p className="text-sm text-gray-500">{item.product_type}</p>
+
+                <NumberSpinner
+                  value={quantities[item._id] || 1}
+                  onChange={(newQty) => handleQtyChange(item._id, newQty)}
+                />
+
+                <p className="mt-2 font-semibold">
+                  NRS {((quantities[item._id] || 1) * item.actual_price).toLocaleString()}
+                </p>
+              </div>
+            ))}
+
+            <div className="border-t pt-4 text-center font-bold text-lg">
+              Total: NRS {totalPrice.toLocaleString()}
+            </div>
+          </div>
+
+          {/* ACTIONS */}
+          <div className="flex flex-col md:flex-row gap-4 mt-6 md:items-center">
+            <Link href="#">
+              <div className="text-orange-400 hover:text-orange-600 hover:underline ml-8">
+                Shop More
+              </div>
+            </Link>
+
+            <button className="ml-auto text-white bg-orange-400 px-6 py-2 rounded hover:bg-orange-600">
+              Pay Now
+            </button>
+          </div>
+
+        </div>
+      )}
     </div>
-    <div className="flex pl-4 mt-4 lg:w-2/3 w-full mx-auto">
-      <Link href='#'><div className="text-orange-400 hover:text-orange-600 inline-flex items-center md:mb-2 lg:mb-0 hover:underline">Shop More? Click here to ...</div>
-      </Link>
-      <button className="flex ml-auto text-white bg-orange-400 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded">Pay Now</button>
-    </div>
-  </div>:<div><div className="text-3xl text-orange-400 font-bold my-6 ">Your Cart is Empty </div><Link  href ='/'><div className="text-orange-400 inline-flex items-center m-2 lg:my-6  hover:text-orange-600 hover:underline">Shop Now</div>
-      </Link></div>
-}
-      </div>
-    
   );
 };
 
-export default page;
+export default Page;

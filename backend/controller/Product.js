@@ -50,5 +50,38 @@ const addProduct= async (req,res) => {
     res.status(500).json({status:"failed",message:error.message || error})
   } 
 }
+const deleteProducts = async (req, res) => {
+  try {
+    const { ids } = req.body; 
+    // ids = ["id1"] OR ["id1", "id2", ...]
 
-module.exports={addProduct,fetchProducts,getProductDetails}
+    if (!ids || ids.length === 0) {
+      return res.status(400).json({
+        success: false,
+        message: "No product IDs provided",
+      });
+    }
+
+    // Convert single id to array safety
+    const idArray = Array.isArray(ids) ? ids : [ids];
+    const result = await Product.deleteMany({
+      _id: { $in: idArray },
+    });
+
+    return res.status(200).json({
+      success: true,
+      message: "Products deleted successfully",
+      deletedCount: result.deletedCount,
+    });
+
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({
+      success: false,
+      message: "Server error while deleting products",
+    });
+  }
+};
+
+
+module.exports={addProduct,fetchProducts,getProductDetails,deleteProducts}

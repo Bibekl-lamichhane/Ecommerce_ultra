@@ -117,10 +117,10 @@ const [open, setOpen] = React.useState(false);
       <div className="flex text-xl font-extrabold">
       <Box  role="presentation" onClick={toggleDrawer(false)}>
          <div className=''>
-          <div className='ml-95 pt-6 '><CancelIcon fontSize="large" /></div>
+          <div className='ml-86 pt-6 '><CancelIcon fontSize="large" /></div>
            <div className='flex justify-center items-center py-6'>
            <div><img
-              src="/Daraz.png"
+              src="logo.png"
               alt="Logo"
               className="h-8 w-auto mr-2 inline-block"
             /></div> 
@@ -171,7 +171,7 @@ const [open, setOpen] = React.useState(false);
             sx={{ display: { xs: "none", sm: "block" } }}
           >
             <img
-              src="/Daraz.png"
+              src="logo.png"
               alt="Logo"
               className="h-8 w-auto mr-2 inline-block"
             />

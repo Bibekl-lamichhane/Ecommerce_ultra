@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { removeCartItems } from "@/redux/reducerslices/productSlice";
 import Link from "next/link";
 import { NumberSpinner } from "@/components/NumberSpinner";
+import axios from "axios";
 
 const Page = () => {
   const cartItems = useSelector((state) => state.product.cartItems);
@@ -22,10 +23,14 @@ const Page = () => {
     (sum, item) => sum + (quantities[item._id] || 1) * item.actual_price,
     0
   );
+ const handelPayButton=()=>{
+ alert(totalPrice)
+ } 
+ 
 
   return (
     <div className="text-gray-600 body-font md:px-10">
-
+    
       {/* EMPTY CART */}
       {cartItems.length === 0 ? (
         <div className="h-145 w-98 flex flex-col justify-center items-center gap-10 md:w-310">
@@ -101,7 +106,7 @@ const Page = () => {
           </div>
 
           {/* ================= MOBILE VIEW (CARDS) ================= */}
-          <div className="md:hidden m-4 space-y-4 w-95">
+          <div className="md:hidden m-4 space-y-4 w-85">
             {cartItems?.map((item, index) => (
               <div
                 key={item._id}
@@ -153,7 +158,7 @@ const Page = () => {
               </div>
             </Link>
 
-            <button className="ml-auto text-white bg-orange-400 px-6 py-2 rounded hover:bg-orange-600">
+            <button type='submit' onClick={handelPayButton} className="ml-auto text-white bg-orange-400 px-6 py-2 rounded hover:bg-orange-600">
               Pay Now
             </button>
           </div>

@@ -87,7 +87,7 @@ const Page = () => {
           </div>
 
           {/* ================= MOBILE VIEW (CARDS) ================= */}
-          <div className="md:hidden m-4 space-y-4 w-95">
+          <div className="md:hidden m-4 space-y-4 w-85">
             {cartItems.map((item, index) => (
               <div
                 key={item._id}

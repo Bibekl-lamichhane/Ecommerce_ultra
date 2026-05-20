@@ -2,6 +2,9 @@
 import React, { useEffect,useState } from "react";
 import ProductCard from "@/components/ProductCard";
 import CircularProgress from '@mui/material/CircularProgress';
+import HeroSection from "@/components/HeroSection";
+import Footer from "@/components/Footer";
+import Statistic from "@/components/Statistic";
 
 const page = () => {
 const [products,setProducts]=useState([])
@@ -26,10 +29,11 @@ const [Loading,setLoading]=useState(true)
   }, []);
 
   return (
-       <div className="md:p-4">
-
+       <div className="">
+        <HeroSection/>
+        <Statistic/>
       {Loading ? (
-        <div className="flex justify-center items-center h-60">
+        <div className="h-screen w-screen flex justify-center  items-center ">
           <CircularProgress size={40} />
         </div>
       ) : (
@@ -42,7 +46,7 @@ const [Loading,setLoading]=useState(true)
              </div>
            </div>
       )}
-
+    <Footer/>
     </div>
 
   );

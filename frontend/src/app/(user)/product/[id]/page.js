@@ -66,8 +66,8 @@ else toast.error("Item is already in you Cart!")
 }
   return (
      
-<div className="text-gray-600 body-font overflow-hidden flex justify-center items-center">
-  <div className="container px-5 p-10 mx-auto">
+<div className="text-gray-600 body-font overflow-hidden flex justify-center items-center h-screen">
+  <div className="container mx-auto">
     <div className="lg:w-300  mx-auto flex flex-wrap">
       <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-150 h-64 object-cover object-center rounded" src={imageUrl}/>
       <div className="lg:w-1/2 w-full lg:p-10 p-4">

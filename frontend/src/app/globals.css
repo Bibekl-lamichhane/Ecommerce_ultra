@@ -1,4 +1,122 @@
 @import "tailwindcss";
+
+:root {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --primary: #f97316;
+  --accent: #fb923c;
+  --inverse-text: #ffffff;
+}
+
+html.dark {
+  --bg: #000000;
+  --surface: #111111;
+  --card: #1a1a1a;
+  --text: #ffffff;
+  --muted: #d4d4d8;
+  --border: #27272a;
+  --primary: #f97316;
+  --accent: #f97316;
+  --inverse-text: #0f172a;
+}
+
+html,
+body {
+  min-height: 100%;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--primary);
+}
+
+button,
+input,
+textarea,
+select {
+  color: inherit;
+}
+
+button,
+.btn {
+  background-color: var(--primary);
+  color: var(--inverse-text);
+}
+
+.card,
+.card-bg,
+.bg-white,
+.bg-surface {
+  background-color: var(--surface);
+}
+
+.border-base {
+  border-color: var(--border);
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+.text-inverse {
+  color: var(--inverse-text);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-white {
+  color: var(--inverse-text);
+}
+
+.text-black {
+  color: var(--text);
+}
+
+html.dark .text-black,
+html.dark .text-gray-900,
+html.dark .text-gray-800,
+html.dark .text-gray-700,
+html.dark .text-gray-600,
+html.dark .text-slate-900,
+html.dark .text-slate-800,
+html.dark .text-slate-700,
+html.dark .text-slate-600,
+html.dark .text-gray-500,
+html.dark .text-gray-400 {
+  color: #ffffff !important;
+}
+
+html.dark .text-white {
+  color: #000000 !important;
+}
+
+html.dark .bg-orange-400 .text-white,
+html.dark .bg-orange-500 .text-white,
+html.dark .bg-amber-500 .text-white,
+html.dark .bg-orange-400.text-white,
+html.dark .bg-orange-500.text-white,
+html.dark .bg-amber-500.text-white,
+html.dark button.text-white,
+html.dark .btn.text-white {
+  color: #ffffff !important;
+}
+
 .root {
   isolation: isolate;
 }

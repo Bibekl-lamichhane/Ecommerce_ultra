@@ -113,7 +113,7 @@ const [open, setOpen] = React.useState(false);
   };
 
   const DrawerList = (
-    <div className="bg-orange-400 text-slate-50 text-2xl font-bold h-screen">
+    <div className="bg-white text-orange-400 text-2xl font-bold h-screen">
       <div className="flex text-xl font-extrabold">
         <Box role="presentation" onClick={toggleDrawer(false)}>
           <div>

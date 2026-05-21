@@ -2,10 +2,10 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="text-gray-600 body-font">
+    <footer className="text-black body-font">
       <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div className="w-64 shrink-0 md:mx-0 mx-auto text-center md:text-left">
-          <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <a className="flex title-font font-medium items-center md:justify-start justify-center text-black">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-orange-500 rounded-full" viewBox="0 0 24 24">
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
             </svg>
@@ -15,47 +15,47 @@ const Footer = () => {
         </div>
         <div className="grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SHOP</h2>
+            <h2 className="title-font font-medium text-black tracking-widest text-sm mb-3">SHOP</h2>
             <nav className="list-none mb-10">
-              <li><a className="text-gray-600 hover:text-gray-800">New Arrivals</a></li>
-              <li><a className="text-gray-600 hover:text-gray-800">Men's Collection</a></li>
-              <li><a className="text-gray-600 hover:text-gray-800">Women's Collection</a></li>
-              <li><a className="text-gray-600 hover:text-gray-800">Sale & Offers</a></li>
+              <li><a className="text-black hover:text-black">New Arrivals</a></li>
+              <li><a className="text-black hover:text-black">Men's Collection</a></li>
+              <li><a className="text-black hover:text-black">Women's Collection</a></li>
+              <li><a className="text-black hover:text-black">Sale & Offers</a></li>
             </nav>
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">HELP</h2>
+            <h2 className="title-font font-medium text-black tracking-widest text-sm mb-3">HELP</h2>
             <nav className="list-none mb-10">
-              <li><a className="text-gray-600 hover:text-gray-800">Size Guide</a></li>
-              <li><a className="text-gray-600 hover:text-gray-800">Track My Order</a></li>
-              <li><a className="text-gray-600 hover:text-gray-800">Returns & Exchanges</a></li>
-              <li><a className="text-gray-600 hover:text-gray-800">FAQs</a></li>
+              <li><a className="text-black hover:text-black">Size Guide</a></li>
+              <li><a className="text-black hover:text-black">Track My Order</a></li>
+              <li><a className="text-black hover:text-black">Returns & Exchanges</a></li>
+              <li><a className="text-black hover:text-black">FAQs</a></li>
             </nav>
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">COMPANY</h2>
+            <h2 className="title-font font-medium text-black tracking-widest text-sm mb-3">COMPANY</h2>
             <nav className="list-none mb-10">
-              <li><a className="text-gray-600 hover:text-gray-800">About Us</a></li>
-              <li><a className="text-gray-600 hover:text-gray-800">Our Story</a></li>
-              <li><a className="text-gray-600 hover:text-gray-800">Careers</a></li>
-              <li><a className="text-gray-600 hover:text-gray-800">Press</a></li>
+              <li><a className="text-black hover:text-black">About Us</a></li>
+              <li><a className="text-black hover:text-black">Our Story</a></li>
+              <li><a className="text-black hover:text-black">Careers</a></li>
+              <li><a className="text-black hover:text-black">Press</a></li>
             </nav>
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CONTACT</h2>
+            <h2 className="title-font font-medium text-black tracking-widest text-sm mb-3">CONTACT</h2>
             <nav className="list-none mb-10">
-              <li><a className="text-gray-600 hover:text-gray-800">hello@daraz.com</a></li>
-              <li><a className="text-gray-600 hover:text-gray-800">+977-9800000000</a></li>
-              <li><a className="text-gray-600 hover:text-gray-800">Mon–Sat, 9am–6pm</a></li>
-              <li><a className="text-gray-600 hover:text-gray-800">Kathmandu, Nepal</a></li>
+              <li><a className="text-black hover:text-black">hello@daraz.com</a></li>
+              <li><a className="text-black hover:text-black">+977-9800000000</a></li>
+              <li><a className="text-black hover:text-black">Mon–Sat, 9am–6pm</a></li>
+              <li><a className="text-black hover:text-black">Kathmandu, Nepal</a></li>
             </nav>
           </div>
         </div>
       </div>
-      <div className="bg-gray-100">
+      <div className="bg-white">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
           <p className="text-gray-500 text-sm text-center sm:text-left">© 2025 Daraz —
-            <a href="#" className="text-gray-600 ml-1">Fashion for every story.</a>
+            <a href="#" className="text-black ml-1">Fashion for every story.</a>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
             <a className="text-gray-500 cursor-pointer">

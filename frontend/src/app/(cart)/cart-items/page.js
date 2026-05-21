@@ -38,7 +38,7 @@ const Page = () => {
             Your Cart is Empty
           </div>
           <Link href="/">
-            <div className=" hover:bg-orange-600 hover:underline bg-amber-500 px-3 py-1 text-white">
+            <div className=" hover:bg-orange-600 hover:underline bg-orange-500 px-3 py-1 text-white">
               Shop Now
             </div>
           </Link>
@@ -55,7 +55,7 @@ const Page = () => {
           <div className="hidden md:block w-full overflow-x-auto mt-8">
             <table className="min-w-full text-left whitespace-nowrap">
               <thead>
-                <tr className="bg-gray-100">
+                <tr className="bg-white">
                   <th className="px-4 py-3 w-12">S.N</th>
                   <th className="px-4 py-3 w-165">Name</th>
                   <th className="px-4 py-3 w-70">Product Type</th>
@@ -93,7 +93,7 @@ const Page = () => {
                 ))}
 
                 {/* TOTAL */}
-                <tr className="bg-gray-100 font-bold">
+                <tr className="bg-white font-bold">
                   <td colSpan="3" className="px-4 py-3 text-center">
                     Total Price
                   </td>
@@ -158,7 +158,7 @@ const Page = () => {
               </div>
             </Link>
 
-            <button type='submit' onClick={handelPayButton} className="ml-auto text-white bg-orange-400 px-6 py-2 rounded hover:bg-orange-600">
+            <button type='submit' onClick={handelPayButton} className="ml-auto text-white bg-orange-400 px-6 py-2 rounded hover:bg-orange-600 m-8">
               Pay Now
             </button>
           </div>

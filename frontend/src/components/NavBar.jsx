@@ -113,13 +113,13 @@ const [open, setOpen] = React.useState(false);
   };
 
   const DrawerList = (
-      <div className="bg-orange-400 text-slate-50 text-2xl font-bold h-screen">
+      <div className="bg-white text-orange text-2xl font-bold h-screen">
       <div className="flex text-xl font-extrabold">
       <Box  role="presentation" onClick={toggleDrawer(false)}>
-         <div className=''>
+         <div className='text-orange-400'>
           <div className='ml-86 pt-6 '><CancelIcon fontSize="large" /></div>
-           <div className='flex justify-center items-center py-6'>
-           <div><img
+           <div className=' flex justify-center items-center w-full'>
+           <div className='flex justify-center items-center py-6 bg-orange-400 rounded-3xl w-30 my-2'><img
               src="logo.png"
               alt="Logo"
               className="h-8 w-auto mr-2 inline-block"
@@ -178,14 +178,14 @@ const [open, setOpen] = React.useState(false);
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "flex", md: "flex" } }}>
-               <div className="hidden md:block"><SearchBar /></div>
+               <div className="hidden md:block flex pt-2"><SearchBar /></div>
               <div className="flex items-center mx-2 md:mx-6">
                
                 <div>
                   <Link href='/cart-items'><IconButton
                     size="large"
                     aria-label="show 4 new mails"
-                    color="inherit"
+                   
                   >
                     <Badge badgeContent={cartItems?.length} color="error">
                     <ShoppingCartIcon/>
@@ -195,7 +195,7 @@ const [open, setOpen] = React.useState(false);
                   <IconButton
                     size="large"
                     aria-label="show 17 new notifications"
-                    color="inherit"
+                  
                   >
                     <Badge badgeContent={17} color="error">
                       <NotificationsIcon />
@@ -204,14 +204,14 @@ const [open, setOpen] = React.useState(false);
                 </div>
 
                 {!token && (
-                <div className="flex items-center gap-2 md:gap-4  md:ml-10 text-amber-50">
+                <div className="flex items-center gap-2 md:gap-4  md:ml-10 text-white">
                   <a href="/sign-in">
-                    <Button color="inherit">Login</Button>
+                           <button className="inline-flex text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg cursor-pointer">Log In</button>
+
                   </a>
                   <a href="/sign-up">
-                    <Button variant="outlined" color="inherit">
-                      Signup
-                    </Button>
+                         <button className="inline-flex text-white bg-orange-400 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg cursor-pointer">Sign up</button>
+
                   </a>
                 </div>)}
               </div>

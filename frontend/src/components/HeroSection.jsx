@@ -2,10 +2,10 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-  <section className="text-gray-600 body-font h-screen">
+  <section className="body-font h-screen">
   <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
     <div className="lg-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Dress Bold. Live Bright.
+      <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text--900">Dress Bold. Live Bright.
 Style That Speaks Before You Do.
         <br className="hidden lg:inline-blockreadymade gluten"/>
       </h1>

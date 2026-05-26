@@ -77,7 +77,7 @@ const ProductCard = ({ product }) => {
           />
 
           {megasale && (
-            <span className=" flex justify-center items-center rounded-full bg-amber-500 px-2 py-1 text-xs font-medium text-slate-50">
+            <span className=" rounded-full bg-amber-500 px-2 py-1 lg:text-xs text-[9px] md:font-medium text-center text-slate-50">
               Mega Sale
             </span>
           )}

@@ -7,6 +7,7 @@ require('dotenv').config();
 const userRoutes=require('./api/User')
 const productRoutes=require('./api/Product')
 const categoryRoutes=require('./api/Category')
+const messageRoutes=require('./api/Message')
 //DB
 dbConnect()
 //MiddleWares
@@ -16,7 +17,7 @@ app.use('/api',userRoutes);
 app.use('/api',productRoutes);
 app.use('/api',categoryRoutes);
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
-
+app.use('/api',messageRoutes)
 //server listning in port
 app.listen(process.env.PORT, () => {
     console.log(`Server is runnning in Port : `+ process.env.PORT )

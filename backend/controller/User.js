@@ -33,7 +33,8 @@ const logInUser=async (req, res) => {
 }
 
 const registerUser=async (req, res) => {
-  let { phonenumber, password, username,email } = req.body;
+  let { phonenumber, password, username,email ,role } = req.body;
+  console.log(req.body)
   phonenumber='+977 '+phonenumber
   try { 
     const phoneExist = await User.exists({phonenumber:phonenumber})
@@ -43,7 +44,7 @@ const registerUser=async (req, res) => {
     } else {
       const hashPassword= await bcrypt.hash(password,saltRound)
       password=hashPassword
-      const result = await User.create({ phonenumber:phonenumber, password, username, email });
+      const result = await User.create({ phonenumber, password, username, email ,role });
       res.status(200).json({ msg: "User signup successful" });
     }
   } catch (err) {    console.error("Signup error:", err);    res.status(500).json({ msg: "Failed to signup"});

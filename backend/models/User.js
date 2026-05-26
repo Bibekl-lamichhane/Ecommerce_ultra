@@ -7,7 +7,7 @@ const userSchema = new Schema({
   email: String,
   password: String,
   role:{
-    type:String,enum:['admin','user'],default:'user'
+    type:String,enum:['admin','user','shop'],default:'user'
   }
 });
 const User = mongoose.model('User', userSchema);

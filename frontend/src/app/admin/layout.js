@@ -117,7 +117,7 @@ const [open, setOpen] = React.useState(false);
       <div className="flex text-xl font-extrabold">
         <Box role="presentation" onClick={toggleDrawer(false)}>
           <div>
-            <div className="ml-86 pt-6 ">
+            <div className="ml-96 pt-6 ">
               <CancelIcon fontSize="large" />
             </div>
             <div className="flex justify-center items-center py-6">

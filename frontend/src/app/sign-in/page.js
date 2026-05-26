@@ -53,6 +53,9 @@ const page = () => {
         if(data.users.role=='admin'){
           return router.push('/admin')
         }
+           if(data.users.role=='shop'){
+          return router.push('/seller-chat')
+        }
         else router.push('/')  
       }
       else if (response.status === 401 ){
@@ -72,7 +75,7 @@ const page = () => {
     }
   };
   return (
-    <div className="md:flex  flex items-center h-screen ">
+    <div className="md:flex  flex items-center h-screen  bg-white">
       <div className="hidden md:block m-">
         <Image
           src="/signupimg.jpg"
@@ -83,7 +86,7 @@ const page = () => {
           className="opacity-80 w-auto h-auto"
         />
       </div>
-      <div className="flex flex-col items-center justify-center w-full max-w-lg mx-auto bg-slate-50 ">
+      <div className="flex flex-col items-center justify-center w-full max-w-lg mx-auto bg-white text-black ">
         <div
           className={`${candal.className} text-3xl md:text-4xl font-bold mb-4 py-10  `}
         >

@@ -10,6 +10,7 @@ import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
+ 
 
 const SignupSchema = Yup.object().shape({
   password: Yup.string()
@@ -36,6 +37,8 @@ function validatePhonenumber(value) {
 
 const page = () => {
 const router=useRouter()
+
+
 
 const handelSubmit = async (values, { setSubmitting }) => {
   try {
@@ -69,7 +72,7 @@ const handelSubmit = async (values, { setSubmitting }) => {
 };
 
   return (
-    <div className="md:flex  flex items-center h-screen ">
+    <div className="md:flex  flex items-center h-screen bg-white">
       <div className="hidden md:block m-">
         <Image
           src="/signupimg.jpg"
@@ -80,7 +83,7 @@ const handelSubmit = async (values, { setSubmitting }) => {
           className="opacity-80 w-auto h-auto"
         />
       </div>
-      <div className="flex flex-col items-center justify-center w-full max-w-lg mx-auto bg-slate-50 ">
+      <div className="flex flex-col items-center justify-center w-full max-w-lg mx-auto  ">
         <div
           className={`${candal.className} text-3xl md:text-4xl font-bold mb-4 py-10  `}
         >
@@ -93,13 +96,14 @@ const handelSubmit = async (values, { setSubmitting }) => {
             phonenumber: "",
             password: "",
             email: "",
-            username:''
+            username:'',
+            role:''
           }}
           validationSchema={SignupSchema}
           onSubmit={handelSubmit}
         >
           {({ errors, touched }) => (
-            <Form action="#" method="post" className="flex flex-col gap-6 w-90">
+            <Form action="#" method="post" className="flex flex-col gap-6 w-90 text-black">
               <Field
                 name="username"
                 type="text"
@@ -136,6 +140,16 @@ const handelSubmit = async (values, { setSubmitting }) => {
               {errors.password && touched.password ? (
                 <div>{errors.password}</div>
               ) : null}
+              <div className="w-full flex justify-center items-center gap-8">
+                <label>
+              <Field type="radio" name="role" value="user" />
+              User
+            </label>
+            <label>
+              <Field type="radio" name="role" value="shop" />
+              Shop
+            </label>
+              </div>
               <button
                 type="submit"
                 className="bg-orange-400 text-slate-50 py-2 px-4 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400 cursor-pointer"

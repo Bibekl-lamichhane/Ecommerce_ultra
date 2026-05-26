@@ -13,7 +13,6 @@ import { Button, List, ListItem, ListItemButton, ListItemText } from "@mui/mater
 import SearchBar from "./SearchBar";
 import { setLogout } from "@/redux/reducerslices/userSlice";
 import { useRouter } from "next/navigation";
-import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -25,6 +24,9 @@ import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import user_navbar from '@/config/user_navbar'
 import CancelIcon from '@mui/icons-material/Cancel';
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+
+
 import Link from "next/link";
 const NavBar = () => {
   const router = useRouter();
@@ -37,6 +39,11 @@ const NavBar = () => {
 const [open, setOpen] = React.useState(false);
   const isMenuOpen = Boolean(anchorEl);
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+    const [isDarkMode, setDarkMode] = React.useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!isDarkMode);
+  };
     
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -81,16 +88,13 @@ const [open, setOpen] = React.useState(false);
         <MenuItem onClick={handleMenuClose}>
           <Avatar  sx={{bgcolor:"orange" , width: 34, height: 34  }}/> <p className="mx-2 text-black ">{userDetails.username}</p>
         </MenuItem>
-        <MenuItem onClick={handleMenuClose}>
-          <Avatar  sx={{bgcolor:"orange" , width: 34, height: 34  }}/> <p className="mx-2">My account</p>
-        </MenuItem>
         <Divider />
-        <MenuItem onClick={handleMenuClose}>
+        <Link href='/customer-support'><MenuItem onClick={handleMenuClose}>
           <ListItemIcon>
-            <PersonAdd fontSize="small" />
+            <SupportAgentIcon  fontSize="small" />
           </ListItemIcon>
-          Add another account
-        </MenuItem>
+          Get Support
+        </MenuItem></Link>
         <MenuItem onClick={handleMenuClose}>
           <ListItemIcon>
             <Settings fontSize="small" />
@@ -117,7 +121,7 @@ const [open, setOpen] = React.useState(false);
       <div className="flex text-xl font-extrabold">
       <Box  role="presentation" onClick={toggleDrawer(false)}>
          <div className='text-orange-400'>
-          <div className='ml-86 pt-6 '><CancelIcon fontSize="large" /></div>
+          <div className='ml-95 pt-6 '><CancelIcon fontSize="large" /></div>
            <div className=' flex justify-center items-center w-full'>
            <div className='flex justify-center items-center py-6 bg-orange-400 rounded-3xl w-30 my-2'><img
               src="logo.png"
@@ -178,9 +182,8 @@ const [open, setOpen] = React.useState(false);
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "flex", md: "flex" } }}>
-               <div className="hidden md:block flex pt-2"><SearchBar /></div>
+               <div className="hidden md:flex pt-2"><SearchBar /></div>
               <div className="flex items-center mx-2 md:mx-6">
-               
                 <div>
                   <Link href='/cart-items'><IconButton
                     size="large"
@@ -200,20 +203,20 @@ const [open, setOpen] = React.useState(false);
                     <Badge badgeContent={17} color="error">
                       <NotificationsIcon />
                     </Badge>
+                    
                   </IconButton>}
                 </div>
-
                 {!token && (
                 <div className="flex items-center gap-2 md:gap-4  md:ml-10 text-white">
                   <a href="/sign-in">
                            <button className="inline-flex text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg cursor-pointer">Log In</button>
-
                   </a>
                   <a href="/sign-up">
                          <button className="inline-flex text-white bg-orange-400 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg cursor-pointer">Sign up</button>
 
                   </a>
                 </div>)}
+                
               </div>
             
             {token && (

@@ -10,6 +10,8 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
 import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+
 import {
   List,
   ListItem,
@@ -81,16 +83,13 @@ const [open, setOpen] = React.useState(false);
         <MenuItem onClick={handleMenuClose}>
           <Avatar  sx={{bgcolor:"orange" , width: 34, height: 34  }}/> <p className="mx-2 text-black ">{userDetails.username}</p>
         </MenuItem>
-        <MenuItem onClick={handleMenuClose}>
-          <Avatar  sx={{bgcolor:"orange" , width: 34, height: 34  }}/> <p className="mx-2">My account</p>
-        </MenuItem>
         <Divider />
-        <MenuItem onClick={handleMenuClose}>
+        <Link href='/customer-support'><MenuItem onClick={handleMenuClose}>
           <ListItemIcon>
-            <PersonAdd fontSize="small" />
+            <SupportAgentIcon  fontSize="small" />
           </ListItemIcon>
-          Add another account
-        </MenuItem>
+          Get Support
+        </MenuItem></Link>
         <MenuItem onClick={handleMenuClose}>
           <ListItemIcon>
             <Settings fontSize="small" />
@@ -106,6 +105,7 @@ const [open, setOpen] = React.useState(false);
         </MenuItem>
     </Menu>
   );
+  
   
 
   const toggleDrawer = (newOpen) => () => {

@@ -11,7 +11,7 @@ export default function SideBar(props) {
   const isAdmin=props.data[0].link=='/admin'
   return (
     <div>
-      {(isAdmin) ? <div className="flex text-xl font-extrabold text-orange-400 p-8">
+      {(isAdmin) ? <div className="flex text-xl font-extrabold text-orange-400 m-8">
         <AdminPanelSettingsIcon sx={{ fontSize: "40px" }} />
         <ListItemButton>AdminPanel</ListItemButton>
       </div>:<div></div>}

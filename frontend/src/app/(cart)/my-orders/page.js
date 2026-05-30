@@ -15,11 +15,11 @@ const Page = () => {
   );
 
   return (
-    <div className="text-gray-600 body-font  md:px-10">
+    <div className="text-gray-600 body-font md:h-screen md:px-10">
 
       {/* EMPTY CART */}
       {cartItems.length === 0 ? (
-        <div className="h-145 w-98 flex flex-col justify-center items-center gap-10 md:w-310">
+        <div className="h-176 w-98 flex flex-col justify-center items-center gap-10 md:w-250 md:h-120">
           <div className="text-3xl text-orange-400 font-bold  ">
             You Have No Orders Till
           </div>

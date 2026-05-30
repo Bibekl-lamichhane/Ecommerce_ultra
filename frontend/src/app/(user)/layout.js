@@ -5,7 +5,7 @@ import SearchBar from '@/components/SearchBar'
 import SideBar from '@/components/SideBar'
 import user_navbar from '@/config/user_navbar'
 import Breadcrumbs from '@/components/BreadCrumbsComponent'
-
+import Footer from '@/components/Footer'
 
 const layout = ({children}) => {
   return (
@@ -16,9 +16,9 @@ const layout = ({children}) => {
           <div className='w-[250] hidden md:block  md:w-[230] my-30 ml-4 fixed'>
             <SideBar data={user_navbar} key={user_navbar._id}/>
           </div>
-          <div className='md:ml-[230] mt-30 m-2'><Breadcrumbs />{children}</div>
+          <div className='md:ml-[210] mt-20 m-2'><Breadcrumbs />{children}</div>
         </div>
-        
+        <Footer/>
     </div>
   )
 }

@@ -8,7 +8,7 @@ import Select from "@mui/material/Select";
 import FileUploadButton from "@/components/FileUploadButton";
 import axios from "axios";
 import toast from "react-hot-toast";
-
+import CreatableSelect from 'react-select/creatable';
 const page = () => {
   const [fetchedCategoriesList, setFetchedCategoriesList] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -24,7 +24,7 @@ const page = () => {
   useEffect(() => {
     const fetchInitally = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/categories");
+        const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/categories`);
         const data = await response.json();
         setFetchedCategoriesList(data);
         setLoading(false);
@@ -83,32 +83,102 @@ const page = () => {
   const handelFileChange = (fileFromButton) => {
     setFile(fileFromButton);
   };
+  const mainCategoryOptions=fetchedCategoriesList?.main_category.map((item)=>{
+    return {value:item,label:item}
+  })
+
+  const subCategoryOptions=fetchedCategoriesList?.sub_category.map((item)=>{
+    return {value:item,label:item}
+  })
+  const productTypeOptions=fetchedCategoriesList?.sub_category.map((item)=>{
+    return {value:item,label:item}
+  })
+  const usageOptions=fetchedCategoriesList?.sub_category.map((item)=>{
+    return {value:item,label:item}
+  })
+  
+const customStyles = {
+   menu: (provided) => ({
+    ...provided, 
+    zIndex: 99,
+  }),
+   container: (provided) => ({
+    ...provided,
+    minHeight: '10px', // Set your desired tall height here
+    height: 'auto', 
+    
+  }),
+
+  // 2. Force the internal text wrapper to expand to match
+  valueContainer: (provided) => ({
+    ...provided,
+    minHeight: '35px', // MUST match the control minHeight precisely
+    height: '35px',
+    padding: '0px 12px',
+    display: 'flex',
+    alignItems: 'center',
+  }),
+
+  // 3. Keep indicators vertically centered
+  indicatorsContainer: (provided) => ({
+    ...provided,
+    height: '50px', // MATCH the height perfectly
+  }),
+
+  // 4. Force the hidden internal input line height to cooperate
+  input: (provided) => ({
+    ...provided,
+    margin: '0px',
+    padding: '0px',
+  }),
+
+ 
+
+  // 2. Option styles for hover/focus state
+  option: (provided, state) => ({
+    ...provided,
+    // Background handling
+   
+    backgroundColor: state.isSelected 
+      ? '#f0f0f0' // Background color when an item is actually clicked/selected
+      : state.isFocused 
+        ? '#fafafa' // Background color when mouse is hovering
+        : '#ffffff', // Default background color
+
+    // Text color handling
+    color: state.isFocused 
+      ? 'orange'  // Text turns orange on hover
+      : '#000000', // Default text color is black
+
+    // Optional: Keeps text orange even if clicked and held down
+    '&:active': {
+      backgroundColor: '#e6e6e6',
+      color: 'orange',
+    }
+  }),
+
+  // Optional: Ensure the text visible in the input box is also black
+  singleValue: (provided) => ({
+    ...provided,
+    color: '#000000',
+  })
+};
 
   return (
-    <div className="w-full flex flex-col items-center p-6">
-      <h1 className="text-3xl font-bold m-10 text-orange-400">Add Product:</h1>
+    <div className="w-full flex flex-col items-center ">
+      <h1 className="text-3xl font-bold mb-10 mt-5 text-orange-400">Add Product:</h1>
       <form className="flex flex-col gap-y-8 text-xl w-full" onSubmit={handelAddProduct}>
 
         {/* Basic Info */}
         <TextField label="Name" name="name" variant="outlined" required />
         {/* Categories */}
         <div className="flex gap-6">
-          <FormControl variant="outlined" sx={{ flex: 1 }}>
-            <InputLabel>Main Category</InputLabel>
-            <Select value={main_category} onChange={(e) => setMain_category(e.target.value)} label="Main Category">
-              {fetchedCategoriesList?.main_category?.map((item) => (
-                <MenuItem key={item} value={item}>{item}</MenuItem>
-              ))}
-            </Select>
+          <FormControl variant="outlined" sx={{ flex: 1 }}>     
+      <CreatableSelect  styles={customStyles}  placeholder="Main Category" options={mainCategoryOptions}  onChange={(e) => setMain_category(e.value)}  className='bg-white' />
           </FormControl>
 
           <FormControl variant="outlined" sx={{ flex: 1 }}>
-            <InputLabel>Sub Category</InputLabel>
-            <Select value={sub_category} onChange={(e) => setSub_category(e.target.value)} label="Sub Category">
-              {fetchedCategoriesList?.sub_category?.map((item) => (
-                <MenuItem key={item} value={item}>{item}</MenuItem>
-              ))}
-            </Select>
+                <CreatableSelect  styles={customStyles}  placeholder="Sub Category" options={subCategoryOptions} onChange={(e) => setSub_category(e.value)}  className='bg-white' />
           </FormControl>
         </div>
         <div className="flex gap-6">
@@ -127,32 +197,12 @@ const page = () => {
 
         <div className="flex gap-6">
           {/* Product Type */}
-            <FormControl variant="outlined" sx={{ flex: 1 }}>
-            <InputLabel>Product Type</InputLabel>
-            <Select
-              name="product_type"
-              value={product_type}
-              onChange={(e) => setProduct_type(e.target.value)}
-              label="Product Type"
-            >
-              {fetchedCategoriesList?.product_type?.map((item) => (
-                <MenuItem key={item} value={item}>{item}</MenuItem>
-              ))}
-            </Select>
+           <FormControl variant="outlined" sx={{ flex: 1 }}>
+                <CreatableSelect  styles={customStyles}  placeholder="Product Type" options={productTypeOptions} onChange={(e) => setProduct_type(e.value)}  className='bg-white' />
           </FormControl>
           {/* Usage */}
-          <FormControl variant="outlined" sx={{ flex: 1 }}>
-            <InputLabel>Usage</InputLabel>
-            <Select
-              name="usage"
-              value={usage}
-              onChange={(e) => setUsage(e.target.value)}
-              label="Usage"
-            >
-              {fetchedCategoriesList?.usage?.map((item) => (
-               <MenuItem key={item} value={item}>{item}</MenuItem>
-              ))}
-            </Select>
+         <FormControl variant="outlined" sx={{ flex: 1 }}>
+                <CreatableSelect  styles={customStyles}  placeholder="Usage" options={usageOptions} onChange={(e) => setUsage(e.value)}  className='bg-white' />
           </FormControl>
         </div>
 

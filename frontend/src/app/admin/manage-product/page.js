@@ -159,14 +159,15 @@ export default function EnhancedTable() {
 
   // ---------------- UI ----------------
   return (
+    <div className=''>
     <Box sx={{ width: '100%', p: isMobile ? 1 : 3 }}>
+        <h1 className=" text-3xl font-bold m-10 text-orange-400">Manage Product:</h1>
 
       <Paper sx={{ width: '100%', overflowX: 'auto' }}>
 
         {/* TOOLBAR */}
         <Toolbar sx={{ display: 'flex', justifycontent: 'space-between',  }}>
 
-        <h1 className="text-3xl font-bold m-10 text-orange-400">Manage Product:</h1>
 
           <Box display="flex" gap={1} alignitems="center">
 
@@ -188,7 +189,7 @@ export default function EnhancedTable() {
             {selected.length > 0 && (
               <Tooltip title="Delete">
                 <IconButton onClick={handleDelete}>
-                  <DeleteIcon />
+                  <DeleteIcon sx={{color:"red"}} />
                 </IconButton>
               </Tooltip>
             )}
@@ -283,6 +284,6 @@ export default function EnhancedTable() {
         />
 
       </Paper>
-    </Box>
+    </Box></div>
   );
 }

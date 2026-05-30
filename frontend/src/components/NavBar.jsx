@@ -117,23 +117,23 @@ const [open, setOpen] = React.useState(false);
   };
 
   const DrawerList = (
-      <div className="bg-white text-orange text-2xl font-bold h-screen">
+      <div className="bg-white text-orange text-2xl font-bold ">
       <div className="flex text-xl font-extrabold">
       <Box  role="presentation" onClick={toggleDrawer(false)}>
          <div className='text-orange-400'>
           <div className='ml-95 pt-6 '><CancelIcon fontSize="large" /></div>
            <div className=' flex justify-center items-center w-full'>
-           <div className='flex justify-center items-center py-6 bg-orange-400 rounded-3xl w-30 my-2'><img
-              src="logo.png"
-              alt="Logo"
-              className="h-8 w-auto mr-2 inline-block"
+           <div className='flex justify-center items-center   rounded-3xl my-2'><img
+              src="logo-blue.png"
+              alt="Logo" 
+              className="w-25 h-25 mr-2 inline-block"
             /></div> 
           </div> 
           </div>
            <hr/>
       <List >     
           {user_navbar.map((text, key) => (
-            <div className="hover:text-orange-400 hover:font-bold w-screen pl-6 my-10" key={key}>
+            <div className="hover:text-orange-400 hover:font-bold w-screen pl-6 my-8" key={key}>
               <Link href={text.link}>
                 <ListItem disablePadding>
                   <ListItemButton key={text.id}>
@@ -175,9 +175,9 @@ const [open, setOpen] = React.useState(false);
             sx={{ display: { xs: "none", sm: "block" } }}
           >
             <img
-              src="logo.png"
+              src="/logo.png"
               alt="Logo"
-              className="h-8 w-auto mr-2 inline-block"
+              className="h-15  w-15 mr-2 inline-block"
             />
           </Typography>
           <Box sx={{ flexGrow: 1 }} />

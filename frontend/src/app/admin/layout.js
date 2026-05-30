@@ -33,7 +33,6 @@ const layout = ({ children }) => {
   const router = useRouter();
   const token = useSelector((state) => state.user.token);
   const userDetails = useSelector((state) => state.user.userDetails);
-  const cartItems=useSelector((state)=>state.product.cartItems)
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 const [open, setOpen] = React.useState(false);
@@ -106,8 +105,6 @@ const [open, setOpen] = React.useState(false);
     </Menu>
   );
   
-  
-
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
@@ -156,27 +153,14 @@ const [open, setOpen] = React.useState(false);
     </div>
   );
   return (
-    <div className='md:flex'>
-    <div >
-      <div className="bg-orange-400 text-slate-50 w-screen  flex items-center  justify-between md:hidden h-18 gap-4">
-        <Button onClick={toggleDrawer(true)}>
+    <div className=''>
+      <div id="navbar">
+        {token && renderMenu}
+      <div className="bg-orange-400 text-slate-50 flex items-center  justify-between  h-18  gap-4 md:gap-0 md:bg-white">
+        <Button onClick={toggleDrawer(true)} className="md:hidden">
           <MenuIcon fontSize="large" sx={{ color: "white" }} />
         </Button>
         <div className="mr-4">
-         {!token && (
-                <div className="flex items-center gap-2 md:gap-4  md:ml-10 text-amber-50">
-                  <a href="/sign-in">
-                    <Button color="inherit">Login</Button>
-                  </a>
-                  <a href="/sign-up">
-                    <Button variant="outlined" color="inherit">
-                      Signup
-                    </Button>
-                  </a>
-                </div>)}
-              
-            
-            {token && (
               <IconButton
                 size="large"
                 edge="end"
@@ -188,19 +172,20 @@ const [open, setOpen] = React.useState(false);
               >
                 <Avatar   sx={{bgcolor:"orange" , width: 34, height: 34  }}/>
               </IconButton>
-            )}</div>
+          </div>
       </div>
       <div>
       <Drawer open={open} onClose={toggleDrawer(false)}>
         {DrawerList}
       </Drawer>
       </div>
-      <div className="w-[250] hidden md:block  md:w-[230] my-30">
+      </div>
+      <div className="md:flex">
+      <div className=" hidden md:block ">
           <SideBar data={admin_navbar} key={admin_navbar.id} />
       </div>
-      {token && renderMenu}
-    </div>
-    <div className="lg:w-300 lg:py-10 mx-4">{children}</div></div>
+    <div className="lg:w-300 mx-4">{children}</div>
+    </div></div>
   );
 };
 

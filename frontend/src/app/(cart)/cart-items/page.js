@@ -29,11 +29,11 @@ const Page = () => {
  
 
   return (
-    <div className="text-gray-600 body-font md:px-10">
+    <div className="text-gray-600 body-font md:px-10 md:h-screen">
     
       {/* EMPTY CART */}
       {cartItems.length === 0 ? (
-        <div className="h-145 w-98 flex flex-col justify-center items-center gap-10 md:w-310">
+        <div className="h-178 w-100 flex flex-col justify-center items-center gap-10 md:w-250 ">
           <div className="text-3xl text-orange-400 font-bold">
             Your Cart is Empty
           </div>

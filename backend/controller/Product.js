@@ -44,6 +44,22 @@ const addProduct= async (req,res) => {
     if (!image) {
       return res.status(400).json({status:"failed",message:"Image file is required"})
     }
+    const dist_main_category = await Category.distinct("main_category");
+     const dist_sub_category = await Category.distinct("sub_category");
+     const dist_product_type = await Category.distinct("product_type");
+     const dist_usage = await Category.distinct("usage");
+     if(!dist_main_category.includes(main_category)){
+      Category.create({main_category})
+     }
+     if(!dist_sub_category.includes(sub_category)){
+      Category.create({sub_category})
+     }
+     if(!dist_product_type.includes(product_type)){
+      Category.create({product_type})
+     }
+     if(!dist_usage.includes(usage)){
+      Category.create({usage})
+     }
     await Product.create({name,gender,product_type,colour,usage,main_category,sub_category,discount_price,actual_price,quantity,description,image:image.filename})
     res.status(200).json({status:"success",message:"Product added successfully"})
   } catch (error) {

@@ -23,8 +23,7 @@ const ProductCard = ({ product }) => {
     ratings,
     _id
   } = product;
-  const backendURL = "http://localhost:8000";
-  const imageUrl = `${backendURL}/uploads/${product.image}`;
+  const imageUrl = product.image
 
   const megasale =
     ((actual_price - discount_price) / actual_price) * 100 >= 50;

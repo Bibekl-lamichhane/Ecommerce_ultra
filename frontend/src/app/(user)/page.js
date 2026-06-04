@@ -3,7 +3,6 @@ import React, { useEffect,useRef,useState } from "react";
 import ProductCard from "@/components/ProductCard";
 import CircularProgress from '@mui/material/CircularProgress';
 import HeroSection from "@/components/HeroSection";
-import Footer from "@/components/Footer";
 import Statistic from "@/components/Statistic";
 
 const page = () => {
@@ -15,7 +14,7 @@ const [Loading,setLoading]=useState(true)
     const fetchProducts = async () => {
       try {
 
-         const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products`);
+         const response = await fetch(`https://ecommerce-ultra-backend.onrender.com/api/products`);
         if (!response.ok) {
         throw new Error("Failed to fetch");
         }

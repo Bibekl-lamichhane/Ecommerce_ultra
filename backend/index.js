@@ -7,8 +7,8 @@ const { Server } = require('socket.io');
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: process.env.NEXT_PUBLIC_API_URL,
-    methods: ["GET", "POST"]
+    origin: "*",
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
   }
 });
 const cors = require('cors');

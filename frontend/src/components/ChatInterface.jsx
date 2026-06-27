@@ -19,7 +19,7 @@ import Avatar from '@mui/material/Avatar';
 import Typography from "@mui/material/Typography";
 
 // SOCKET OUTSIDE COMPONENT
-const socket = io("http://localhost:8000", {
+const socket = io("https://ecommerce-ultra-backend.onrender.com/api", {
   autoConnect: false,
 });
 
@@ -135,7 +135,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
   const fetchUserList = async () => {
     try {
       const { data } = await axios.get(
-        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/users`
+        `https://ecommerce-ultra-backend.onrender.com/api/users`
       );
 
       if (role === "user") {
@@ -162,7 +162,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
   const fetchMessage = async () => {
     try {
       const { data } = await axios.get(
-        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/message/${_id}/${detailsOfReciever._id}`
+        `https://ecommerce-ultra-backend.onrender.com/api/message/${_id}/${detailsOfReciever._id}`
       );
 
       setMessages(data.messages);
@@ -212,7 +212,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
       // SAVE TO DATABASE
       const { data } = await axios.post(
-        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/message`,
+        `https://ecommerce-ultra-backend.onrender.com/api/message`,
         messagePayload
       );
 

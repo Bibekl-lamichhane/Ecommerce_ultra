@@ -152,7 +152,7 @@ const Page = () => {
 
           {/* ACTIONS */}
           <div className="flex flex-col md:flex-row gap-4 mt-6 md:items-center">
-            <Link href="#">
+            <Link href="/">
               <div className="text-orange-400 hover:text-orange-600 hover:underline ml-8">
                 Shop More
               </div>

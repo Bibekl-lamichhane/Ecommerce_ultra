@@ -39,7 +39,7 @@ const page = () => {
   const router=useRouter()
   const handelSubmit = async (value, { setSubmitting }) => {
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/login`, {
+      const response = await fetch(`http://localhost:8000/api/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

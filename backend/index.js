@@ -4,16 +4,18 @@ const app = express();
 //websocket import
 const { createServer } = require('node:http');
 const { Server } = require('socket.io');
-const server = createServer(app);
-const io = new Server(server, {
-  cors: {
-    origin: "*",
-  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-  }
-});
 const cors = require('cors');
 const dbConnect = require('./dbConnection');
 require('dotenv').config();
+const server = createServer(app);
+const io = new Server(server, {
+  cors: {
+    origin: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+    credentials: true,
+  },
+  path: '/socket.io',
+});
 const userRoutes=require('./api/User')
 const productRoutes=require('./api/Product')
 const categoryRoutes=require('./api/Category')
@@ -30,7 +32,7 @@ io.on('connection', (socket) => {
 //DB
 dbConnect()
 //MiddleWares
-app.use(cors());
+app.use(cors({ origin: true, credentials: true }));
 app.use(express.json())
 app.use('/api',userRoutes);
 app.use('/api',productRoutes);

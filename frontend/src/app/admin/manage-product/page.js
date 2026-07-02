@@ -60,7 +60,7 @@ export default function EnhancedTable() {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products`
+          `http://localhost:8000/api/products`
         );
         setData(res.data.products || []);
       } catch (err) {
@@ -116,8 +116,7 @@ export default function EnhancedTable() {
     if (!selected.length) return;
 
     try {
-      // 🔥 Example API call (you will replace backend URL later)
-      const {data}=await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/delete-product`, {
+      const {data}=await axios.post(`http://localhost:8000/api/delete-product`, {
         ids: selected,
       });
       toast.success(data.message)

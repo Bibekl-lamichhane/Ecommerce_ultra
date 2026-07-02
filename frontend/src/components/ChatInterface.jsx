@@ -19,7 +19,7 @@ import Avatar from '@mui/material/Avatar';
 import Typography from "@mui/material/Typography";
 
 // SOCKET OUTSIDE COMPONENT
-const socket = io("https://ecommerce-ultra-backend.onrender.com/api", {
+const socket = io("http://localhost:8000", {
   autoConnect: false,
 });
 
@@ -85,7 +85,7 @@ const ChatInterface = () => {
     };
   }, [detailsOfReciever?._id, _id]);
 
-  // SMART AUTO SCROLL
+ // SMART AUTO SCROLL
   useEffect(() => {
   const container = chatContainerRef.current;
 
@@ -101,6 +101,31 @@ const ChatInterface = () => {
     });
   }
 }, [messages]);
+
+// useEffect(() => {
+//   if (!chatContainerRef.current) return;
+
+//   chatContainerRef.current.scrollTop =
+//     chatContainerRef.current.scrollHeight;
+// }, [detailsOfReciever?._id, messages.length]);
+
+// useEffect(() => {
+//   const container = chatContainerRef.current;
+
+//   if (!container) return;
+
+//   const isNearBottom =
+//     container.scrollHeight -
+//       container.scrollTop -
+//       container.clientHeight <
+//     100;
+
+//   if (isNearBottom) {
+//     messagesEndRef.current?.scrollIntoView({
+//       behavior: "smooth",
+//     });
+//   }
+// }, [messages]);
 
   
 const StyledBadge = styled(Badge)(({ theme }) => ({
@@ -135,18 +160,18 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
   const fetchUserList = async () => {
     try {
       const { data } = await axios.get(
-        `https://ecommerce-ultra-backend.onrender.com/api/users`
+        `http://localhost:8000/api/users`
       );
 
       if (role === "user") {
         const filteredUsers = data.users.filter(
-          (user) => user.role === "admin"
+          (user) => user.role === "shop"
         );
 
         setUserList(filteredUsers);
       }
 
-      if (role === "admin") {
+      if (role === "shop" ) {
         const filteredUsers = data.users.filter(
           (user) => user.role === "user"
         );
@@ -162,7 +187,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
   const fetchMessage = async () => {
     try {
       const { data } = await axios.get(
-        `https://ecommerce-ultra-backend.onrender.com/api/message/${_id}/${detailsOfReciever._id}`
+        `http://localhost:8000/api/message/${_id}/${detailsOfReciever._id}`
       );
 
       setMessages(data.messages);
@@ -212,7 +237,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
       // SAVE TO DATABASE
       const { data } = await axios.post(
-        `https://ecommerce-ultra-backend.onrender.com/api/message`,
+        `http://localhost:8000/api/message`,
         messagePayload
       );
 
@@ -227,13 +252,13 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
   // CHAT UI
   const loadChat = (
-    <div >
-      <div className="text-orange-500 font-extrabold mb-5 "  ref={chatContainerRef}>
+    <div  >
+      <div  className="text-orange-500 font-extrabold mb-5 " >
         Message From {detailsOfReciever?.username}
       </div>
 
       {/* CHAT BODY */}
-      <div  className=" h-150 md:h-100 overflow-y-scroll flex flex-col" >
+      <div   className="h-100 md:h-100 overflow-y-scroll flex flex-col"  >
         {messages.map((m, key) => {
           const isMine = m.senderId === _id;
 
@@ -308,7 +333,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
         variant="dot"
         sx={{marginRight:2, marginTop:1}}
       >
-        <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+        <Avatar alt="Image of Reciever" src="/static/images/avatar/1.jpg" />
       </StyledBadge>
 
               <ListItemText
@@ -341,7 +366,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
   );
 
   return (
-    <div>
+    <div className="">
       <Tabs
         value={value}
         onChange={handleChange}
@@ -358,7 +383,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
         <Tab label="Online" />
       </Tabs>
 
-      <div className="text-black flex justify-center items-center mt-3 ">
+      <div className=" text-black flex justify-center items-center mt-3 ">
         {value === 0 ? loadChat : loadOnlineList}
       </div>
     </div>

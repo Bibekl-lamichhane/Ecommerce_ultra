@@ -83,12 +83,6 @@ const [open, setOpen] = React.useState(false);
           <Avatar  sx={{bgcolor:"orange" , width: 34, height: 34  }}/> <p className="mx-2 text-black ">{userDetails.username}</p>
         </MenuItem>
         <Divider />
-        <Link href='/customer-support'><MenuItem onClick={handleMenuClose}>
-          <ListItemIcon>
-            <SupportAgentIcon  fontSize="small" />
-          </ListItemIcon>
-          Get Support
-        </MenuItem></Link>
         <MenuItem onClick={handleMenuClose}>
           <ListItemIcon>
             <Settings fontSize="small" />

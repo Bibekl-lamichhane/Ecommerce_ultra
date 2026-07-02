@@ -17,7 +17,7 @@ const [Loading,setLoading]=useState(true)
     const fetchProducts = async () => {
       try {
 
-         const response = await fetch(`https://ecommerce-ultra-backend.onrender.com/api/products`);
+         const response = await fetch(`http://localhost:8000/api/products`);
         if (!response.ok) {
         throw new Error("Failed to fetch");
         }

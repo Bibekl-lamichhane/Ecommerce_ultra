@@ -18,7 +18,7 @@ const page = () => {
  
      const fetchInitally = async () => {
         try {
-          const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/categories`);
+          const response = await fetch(`http://localhost:8000/api/categories`);
           const data = await response.json();
           setFetchedCategoriesList(data);
           setLoading(false);
@@ -119,10 +119,10 @@ fetchInitally()
   const subCategoryOptions=fetchedCategoriesList?.sub_category?.map((item)=>{
     return {value:item,label:item}
   })
-  const productTypeOptions=fetchedCategoriesList?.sub_category?.map((item)=>{
+  const productTypeOptions=fetchedCategoriesList?.product_type?.map((item)=>{
     return {value:item,label:item}
   })
-  const usageOptions=fetchedCategoriesList?.sub_category?.map((item)=>{
+  const usageOptions=fetchedCategoriesList?.usage?.map((item)=>{
     return {value:item,label:item}
   })
   

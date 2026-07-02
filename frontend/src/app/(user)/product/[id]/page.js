@@ -23,7 +23,7 @@ const Page = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       const res = await fetch(
-        `https://ecommerce-ultra-backend.onrender.com/api/product/${params.id}`
+        `http://localhost:8000/api/product/${params.id}`
       );
       const data = await res.json();
       setProductDetails(data.productDetails);
@@ -32,7 +32,7 @@ const Page = () => {
 
     if (params?.id) fetchProduct();
   }, [params]);
-  const backendURL = "https://ecommerce-ultra-backend.onrender.com/api";
+  const backendURL = "http://localhost:8000/api";
   // const imageUrl = `${backendURL}/uploads/${productDetails?.image}`;
   const wishLists=useSelector(state=>state.product.wishLists)
   const existInWishlist = wishLists?.some(
@@ -70,7 +70,7 @@ else toast.error("Item is already in you Cart!")
 <div className="text-black body-font overflow-hidden flex justify-center items-center h-screen">
   <div className="container mx-auto">
     <div className="lg:w-300  mx-auto flex flex-wrap">
-      <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-150 h-64 object-cover object-center rounded" src={productDetails.image}/>
+      <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-150 h-64 object-cover object-center rounded" src={productDetails.imageURL}/>
       <div className="lg:w-1/2 w-full lg:p-10 p-4">
       <div className="flex gap-5 my-3 items-center">
         <h2 className="text-sm title-font text-black ">{productDetails.usage}</h2>  {megasale && (

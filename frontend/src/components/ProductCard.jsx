@@ -23,7 +23,7 @@ const ProductCard = ({ product }) => {
     ratings,
     _id
   } = product;
-  const imageUrl = product.image
+  const imageUrl = product.imageURL
 
   const megasale =
     ((actual_price - discount_price) / actual_price) * 100 >= 50;

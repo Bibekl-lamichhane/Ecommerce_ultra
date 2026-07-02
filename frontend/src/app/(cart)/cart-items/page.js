@@ -120,7 +120,7 @@ const Page = () => {
                     <img
                       width={100}
                       height={100}
-                      src={`${process.env.NEXT_PUBLIC_BACKEND_URL}/uploads/${item.image}`}
+                      src={`http://localhost:8000/uploads/${item.image}`}
                       alt={item.name}
                     />
                   </div>
